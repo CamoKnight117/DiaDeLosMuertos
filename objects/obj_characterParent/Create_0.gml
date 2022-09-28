@@ -14,6 +14,7 @@ knockedDown = false; //Has the player been knocked down?
 isHit = false; //Has the player been hit by an enemy?
 isAttacking = false; //Is the player attacking?
 
+hpCounter = 100;
 stunCounter = 0;
 
 //Movement speeds for scr_movement

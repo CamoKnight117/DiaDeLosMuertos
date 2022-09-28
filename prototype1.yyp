@@ -6,7 +6,7 @@
     {"id":{"name":"spr_placeholder","path":"sprites/spr_placeholder/spr_placeholder.yy",},"order":0,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":7,},
     {"id":{"name":"spr_collisionShape","path":"sprites/spr_collisionShape/spr_collisionShape.yy",},"order":5,},
-    {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},"order":8,},
+    {"id":{"name":"spr_testCamChangedThis","path":"sprites/spr_testCamChangedThis/spr_testCamChangedThis.yy",},"order":8,},
     {"id":{"name":"spr_characterSpace","path":"sprites/spr_characterSpace/spr_characterSpace.yy",},"order":1,},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},"order":2,},
     {"id":{"name":"scr_attacks","path":"scripts/scr_attacks/scr_attacks.yy",},"order":3,},

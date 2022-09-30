@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_character",
   "spriteId": {
-    "name": "spr_characterPlaceholder",
-    "path": "sprites/spr_characterPlaceholder/spr_characterPlaceholder.yy",
+    "name": "spr_characterIdle",
+    "path": "sprites/spr_characterIdle/spr_characterIdle.yy",
   },
   "solid": false,
   "visible": true,

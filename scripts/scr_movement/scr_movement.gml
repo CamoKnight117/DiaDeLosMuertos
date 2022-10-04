@@ -2,7 +2,12 @@
 function scr_movement() {
 	horizontal_dir = right - left; //Get movement directions from input
 	vertical_dir = down - up;
-
+	
+	if(horizontal_dir != 0)
+	{
+		image_xscale = horizontal_dir;
+	}
+	
 	y = groundY - jumpPosition;
 	x = groundX;
 

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_placeholder",
   "spriteId": {
-    "name": "spr_collisionShape",
-    "path": "sprites/spr_collisionShape/spr_collisionShape.yy",
+    "name": "spr_shadow",
+    "path": "sprites/spr_shadow/spr_shadow.yy",
   },
   "solid": false,
   "visible": true,

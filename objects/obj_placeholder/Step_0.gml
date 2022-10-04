@@ -1,6 +1,5 @@
 if(instance_exists(objectToFollow))
 {
-x = objectToFollow.groundX-1;
+x = objectToFollow.groundX;
 y = objectToFollow.groundY+objectToFollow.sprite_height/2;
-
 }

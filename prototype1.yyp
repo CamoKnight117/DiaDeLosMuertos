@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_characterIdle","path":"sprites/spr_characterIdle/spr_characterIdle.yy",},"order":9,},
     {"id":{"name":"spr_placeholder","path":"sprites/spr_placeholder/spr_placeholder.yy",},"order":0,},
+    {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},"order":10,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":7,},
     {"id":{"name":"spr_collisionShape","path":"sprites/spr_collisionShape/spr_collisionShape.yy",},"order":5,},
     {"id":{"name":"spr_testCamChangedThis","path":"sprites/spr_testCamChangedThis/spr_testCamChangedThis.yy",},"order":8,},

@@ -12,3 +12,7 @@ if(isHit)
 }
 
 depth = -1*groundY;
+
+scr_animate();
+scr_enemyInput();
+scr_movement();

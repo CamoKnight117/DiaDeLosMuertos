@@ -1,2 +1,2 @@
-instance_destroy(collisionTracker, true);
+instance_destroy(shadow, true);
 

@@ -10,9 +10,5 @@ if(isHit)
 		}
 	}
 }
-else
-{
-	sprite_index = spr_characterIdle;
-}
 
 depth = -1*groundY;

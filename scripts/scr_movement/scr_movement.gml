@@ -3,9 +3,38 @@ function scr_movement() {
 	horizontal_dir = right - left; //Get movement directions from input
 	vertical_dir = down - up;
 	
+//character state variables updates
 	if(horizontal_dir != 0)
 	{
 		image_xscale = horizontal_dir;
+	}
+	if(vertical_dir == -1 and horizontal_dir != -1)
+	{
+		image_xscale = 1;
+	}
+	if(vertical_dir == 1 and horizontal_dir != 1)
+	{
+		image_xscale = -1;
+	}
+	
+	
+		if(horizontal_dir != 0 || vertical_dir != 0)
+	{
+				idle = false;
+		if(sprint == 0)
+		{
+			running = true;
+			sprinting = false;
+		}
+		else
+		{
+			running = false;
+			sprinting = true;
+		}
+	}
+	else
+	{
+		idle = true;
 	}
 	
 	y = groundY - jumpPosition;

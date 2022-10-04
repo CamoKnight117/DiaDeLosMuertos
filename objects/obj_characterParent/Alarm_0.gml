@@ -1,2 +1,2 @@
 /// @description Set collisionTracker follow
-collisionTracker.objectToFollow = id;
+shadow.objectToFollow = id;

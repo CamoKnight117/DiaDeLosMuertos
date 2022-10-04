@@ -13,6 +13,18 @@ grounded = true; //Is the player on the ground?
 knockedDown = false; //Has the player been knocked down?
 isHit = false; //Has the player been hit by an enemy?
 isAttacking = false; //Is the player attacking?
+idle = true;
+running = false;
+sprinting = false;
+
+//Sprite/Animation variables
+animationFPS = 6;
+frameCounter = 0;
+frameIndex = 0;
+idleSprite = spr_playerIdle;
+runningSprite = spr_playerWalkingSpritesheet;
+sprintingSprite = spr_playerWalkingSpritesheet;
+image_speed = 0;
 
 hpCounter = 100;
 stunCounter = 0;
@@ -21,8 +33,6 @@ stunCounter = 0;
 horRunSpeed = 2;
 verRunSpeed = 1;
 sprintMultiplier = 2; //must be >= 1
-
-
 
 //jumpVariables
 jumpPower = 8; //Starting velocity of a jump that decays by jumpDrag
@@ -33,6 +43,6 @@ jumpDelay = 2; //Time you have to wait between jumps (To prevent jump spam)
 jumpDelayCounter = 0; //Counts the frames left before player can jump again
 jumpPosition = 0; //Keeps track of the players height in their jump
 
-collisionTracker = instance_create_depth(groundX,groundY,depth + 1,obj_placeholder);
+shadow = instance_create_depth(groundX,groundY,depth + 1,obj_shadow);
 alarm[0] = 1;
 

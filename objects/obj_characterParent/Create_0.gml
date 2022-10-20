@@ -29,6 +29,7 @@ frameIndex = 0;
 idleSprite = spr_playerIdle;
 runningSprite = spr_playerWalkingSpritesheet;
 sprintingSprite = spr_playerWalkingSpritesheet;
+hitSprite = spr_enemyHit;
 image_speed = 0;
 
 hpCounter = 100;

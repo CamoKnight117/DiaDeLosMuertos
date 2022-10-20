@@ -1,8 +1,8 @@
 depth = -1*y;
 
 damage = 10;
-stunLength = 2000;
-Owner = obj_character;
+stunLength = 300;
+Owner = 0;
 DMGFrame = 3;
 animationLength = 10;
 

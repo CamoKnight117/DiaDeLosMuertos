@@ -1,7 +1,7 @@
 // This script handles movement of the character, with the exception of attacks.
 function scr_movement() {
 	
-	if(isHit) //If you're hit, don't move, and increment stun variables as necessary
+	if(isHit) //If you're hit, don't move, and decrement stun variables as necessary
 	{
 		stunMechanics();
 	}
@@ -24,7 +24,7 @@ function stunMechanics(){
 			stunCounter--;
 			if(stunCounter == 0)
 			{
-				itHit = false;
+				isHit = false;
 			}
 	}
 }
@@ -47,6 +47,7 @@ function attackMechanics(){
 		{
 			isAttacking = true;
 			var attack = instance_create_depth(x,y,depth,obj_basicAttack);			
+			attack.Owner = self;
 			attackingCounter = attack.animationLength;			
 		}
 }

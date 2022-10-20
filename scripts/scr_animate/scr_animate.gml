@@ -15,6 +15,11 @@ function scr_animate(){
  {
 	 sprite_index = sprintingSprite;
  }
+
+if(isHit)
+ {
+	 sprite_index = hitSprite;
+ }
  
  
  

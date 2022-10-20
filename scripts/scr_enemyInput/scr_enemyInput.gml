@@ -1,16 +1,71 @@
 function scr_enemyInput(){
-
-	//This script changes the enemy behavior
-	//Movement
-	left =  keyboard_check(vk_left)
-	right = keyboard_check(vk_right)
-	up =  keyboard_check(vk_up)
-	down = keyboard_check(vk_down)
+	space = 0;
+	left = 0;
+	right = 0;
+	up = 0;
+	down = 0;
 	
-	sprint = keyboard_check(vk_shift);
+	
+	if(awake == false)
+	{
+		if(distance_to_object(obj_character) < 200)
+		{
+			awake = true;
+		}
+	}
 
-	space = 0//keyboard_check(vk_space)
+	if(awake)
+	{
+		playerX = obj_character.x;
+		playerY = obj_character.y;
+		
+		if(x - playerX > 20 || x - playerX < -20 || y - playerY> 20 || y - playerY < -20)
+		{
+			if(following)
+			{
+				if(x - playerX > 20)
+				{
+					left = 1;
+					right = 0;
+				}
+				else if(x - playerX < -20)
+				{
+					left = 0;
+					right = 1;
+				}
+		
+				if(y - playerY> 20)
+				{
+					up = 1;
+					down = 0;
+				}
+				else if(y- playerY< -20)
+				{
+					up = 0;
+					down = 1;
+				}
+			}
+			else
+			{
+				followCounter++;
+				if(followCounter > followLag)
+				{
+					following = true;
+					followCounter = 0;
+				}
+			}
+		}
+		else
+		{
+			following = false;
+			followCount = 0;
+		}
+	}
 
+	
+	
+	
+	
 
 	//Utility
 	if keyboard_check_pressed(vk_escape) game_end();

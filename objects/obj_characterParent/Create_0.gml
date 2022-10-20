@@ -30,12 +30,12 @@ hpCounter = 100;
 stunCounter = 0;
 
 //Movement speeds for scr_movement
-horRunSpeed = 2;
-verRunSpeed = 1;
+horRunSpeed = 1.5;
+verRunSpeed = .75;
 sprintMultiplier = 2; //must be >= 1
 
 //jumpVariables
-jumpPower = 8; //Starting velocity of a jump that decays by jumpDrag
+jumpPower = 7; //Starting velocity of a jump that decays by jumpDrag
 jumpVelocity = 0; //Keeps track of current jump velocity
 jumpDrag = 0.25; //How much the jump velocity changes per frame
 jumpFeather = 2; //How much slower the fall from the peak of the jump should be, 2 = half as fast fall

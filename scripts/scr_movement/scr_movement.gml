@@ -46,7 +46,17 @@ function attackMechanics(){
 		if(basicAttack && grounded && isAttacking != true)
 		{
 			isAttacking = true;
-			var attack = instance_create_depth(x,y,depth,obj_basicAttack);			
+			var attack = instance_create_depth(x,y,depth,obj_basicAttack);	
+			if(image_xscale = 1)
+			{
+			attack.x = x + attack.xOffset;
+			attack.y = y + attack.yOffset;
+			}
+			else
+			{
+				attack.x = x - attack.sprite_width - attack.xOffset;
+				attack.y = y + attack.yOffset; 
+			}					
 			attack.Owner = self;
 			attackingCounter = attack.animationLength;			
 		}

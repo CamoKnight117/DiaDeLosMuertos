@@ -6,5 +6,8 @@ Owner = 0;
 DMGFrame = 3;
 animationLength = 10;
 
+xOffset = 20;
+yOffset = -20;
+
 depthDifToDamage = 35;
 animationCounter = -1;

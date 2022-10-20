@@ -7,6 +7,9 @@ right = 0;
 up = 0;
 down = 0;
 sprint = 0;
+basicAttack = 0;
+
+
 
 //Player states:
 grounded = true; //Is the player on the ground?

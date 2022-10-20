@@ -10,6 +10,8 @@ function scr_input() {
 
 	space = keyboard_check(vk_space)
 
+	basicAttack = keyboard_check(ord("."));
+	
 
 	//Utility
 	if keyboard_check_pressed(vk_escape) game_end();

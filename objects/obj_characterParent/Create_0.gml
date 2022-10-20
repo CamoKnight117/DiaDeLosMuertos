@@ -20,6 +20,8 @@ idle = true;
 running = false;
 sprinting = false;
 
+attackingCounter = 0;
+
 //Sprite/Animation variables
 animationFPS = 6;
 frameCounter = 0;

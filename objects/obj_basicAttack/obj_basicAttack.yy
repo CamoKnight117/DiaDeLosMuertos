@@ -2,8 +2,11 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_basicAttack",
-  "spriteId": null,
-  "solid": false,
+  "spriteId": {
+    "name": "spr_basicAttackHitbox",
+    "path": "sprites/spr_basicAttackHitbox/spr_basicAttackHitbox.yy",
+  },
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,

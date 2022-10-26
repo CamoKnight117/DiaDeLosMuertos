@@ -10,7 +10,7 @@ function scr_input() {
 
 	space = keyboard_check(vk_space)
 
-	basicAttack = keyboard_check(ord("J"));
+	basicAttack = keyboard_check_pressed(ord("J"));
 	
 
 	//Utility

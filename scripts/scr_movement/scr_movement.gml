@@ -40,10 +40,8 @@ function attackMechanics(){
 			{
 			attackingCounter--;
 			}
-		}
-		
-		//Check if isAttacking needs to be set to true
-		if(basicAttack && grounded && isAttacking != true)
+		}	
+		else if(basicAttack && grounded && isAttacking != true) //Check if isAttacking needs to be set to true
 		{
 			isAttacking = true;
 			var attack = instance_create_depth(x,y,depth,obj_basicAttack);	

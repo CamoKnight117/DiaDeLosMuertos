@@ -4,7 +4,15 @@ function scr_enemyInput(){
 	right = 0;
 	up = 0;
 	down = 0;
+	basicAttack = false;
 	
+	if(isAttacking == false && attackCountdown > 0)
+	{
+	attackCountdown--;
+	}
+	
+	var basicAttackDistance = 20;
+	var basicAttackVertDist = 35;
 	
 	if(awake == false)
 	{
@@ -52,14 +60,23 @@ function scr_enemyInput(){
 				{
 					following = true;
 					followCounter = 0;
-				}
+				}				
 			}
+
 		}
 		else
 		{
 			following = false;
 			followCount = 0;
 		}
+		
+					
+		if(abs(x - playerX) < basicAttackDistance && 
+		abs(y - playerY) < basicAttackVertDist && attackCountdown <= 0)
+			{
+				basicAttack = true;
+				attackCountdown = attackDelay;
+			}
 	}
 
 	

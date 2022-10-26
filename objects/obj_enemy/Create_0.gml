@@ -8,6 +8,9 @@ following = false;
 followLag = 60;
 followCounter = 0;
 
+attackCountdown = 0;
+attackDelay = 200;
+
 animationFPS = 6;
 frameCounter = 0;
 frameIndex = 0;

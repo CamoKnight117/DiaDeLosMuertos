@@ -27,12 +27,13 @@ animationFPS = 6;
 frameCounter = 0;
 frameIndex = 0;
 idleSprite = spr_playerIdle;
+attackingSprite = spr_playerIdle;
 runningSprite = spr_playerWalkingSpritesheet;
 sprintingSprite = spr_playerWalkingSpritesheet;
 hitSprite = spr_enemyHit;
 image_speed = 0;
 
-hpCounter = 100;
+HP = 100;
 stunCounter = 0;
 
 //Movement speeds for scr_movement

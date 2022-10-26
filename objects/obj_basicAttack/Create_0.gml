@@ -1,10 +1,10 @@
 depth = -1*y;
 
 damage = 10;
-stunLength = 300;
+stunLength = 30;
 Owner = 0;
-DMGFrame = 3;
-animationLength = 10;
+DMGFrame = 15;
+animationLength = 30;
 
 xOffset = 20;
 yOffset = -20;

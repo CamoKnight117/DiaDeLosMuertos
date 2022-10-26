@@ -11,7 +11,6 @@
     {"id":{"name":"spr_collisionShape","path":"sprites/spr_collisionShape/spr_collisionShape.yy",},"order":5,},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},"order":2,},
     {"id":{"name":"scr_enemyInput","path":"scripts/scr_enemyInput/scr_enemyInput.yy",},"order":4,},
-    {"id":{"name":"scr_attacks","path":"scripts/scr_attacks/scr_attacks.yy",},"order":3,},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":3,},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},"order":0,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":4,},

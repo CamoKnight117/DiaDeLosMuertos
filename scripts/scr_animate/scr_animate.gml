@@ -20,6 +20,10 @@ if(isHit)
  {
 	 sprite_index = hitSprite;
  }
+ else if(isAttacking)
+ {
+	 sprite_index = attackingSprite;
+ }
  
  
  

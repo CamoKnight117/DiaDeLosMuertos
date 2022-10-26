@@ -15,6 +15,7 @@ basicAttack = 0;
 grounded = true; //Is the player on the ground?
 knockedDown = false; //Has the player been knocked down?
 isHit = false; //Has the player been hit by an enemy?
+hitOrigin = 0; //Which side were you hit from? -1 = left, 1 = right
 isAttacking = false; //Is the player attacking?
 idle = true;
 running = false;

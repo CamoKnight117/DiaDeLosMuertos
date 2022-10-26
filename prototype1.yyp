@@ -4,6 +4,7 @@
   "name": "prototype1",
   "resources": [
     {"id":{"name":"spr_TitleBackground","path":"sprites/spr_TitleBackground/spr_TitleBackground.yy",},"order":13,},
+    {"id":{"name":"spr_mariachiManTempIdle","path":"sprites/spr_mariachiManTempIdle/spr_mariachiManTempIdle.yy",},"order":19,},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},"order":9,},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},"order":1,},
     {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},"order":10,},

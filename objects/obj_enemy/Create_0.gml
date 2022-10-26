@@ -5,11 +5,11 @@ event_inherited();
 awake = false;
 
 following = false;
-followLag = 60;
+followLag = 45; //Approximately how long an enemy takes to start following you
 followCounter = 0;
 
 attackCountdown = 0;
-attackDelay = 200;
+attackDelay = 100; //Approximately how long an enemy takes to follow up attack
 
 animationFPS = 6;
 frameCounter = 0;

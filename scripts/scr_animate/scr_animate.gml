@@ -19,6 +19,7 @@ function scr_animate(){
 if(isHit)
  {
 	 sprite_index = hitSprite;
+	 image_xscale = hitOrigin;
  }
  else if(isAttacking)
  {

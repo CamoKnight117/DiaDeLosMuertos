@@ -11,7 +11,7 @@ function scr_enemyInput(){
 	attackCountdown--;
 	}
 	
-	var basicAttackDistance = 20;
+	var basicAttackDistance = 30;
 	var basicAttackVertDist = 35;
 	
 	if(awake == false)
@@ -55,11 +55,11 @@ function scr_enemyInput(){
 			}
 			else
 			{
-				followCounter++;
-				if(followCounter > followLag)
+				followCounter--;
+				if(followCounter < 0)
 				{
 					following = true;
-					followCounter = 0;
+					followCounter = followLag/4 + random(followLag*1.5);
 				}				
 			}
 
@@ -75,7 +75,7 @@ function scr_enemyInput(){
 		abs(y - playerY) < basicAttackVertDist && attackCountdown <= 0)
 			{
 				basicAttack = true;
-				attackCountdown = attackDelay;
+				attackCountdown = attackDelay/4 + random(attackDelay*1.5);
 			}
 	}
 

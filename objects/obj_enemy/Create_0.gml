@@ -8,4 +8,12 @@ following = false;
 followLag = 60;
 followCounter = 0;
 
+animationFPS = 6;
+frameCounter = 0;
+frameIndex = 0;
+idleSprite = spr_zombieMariachi;
+runningSprite = spr_zombieMariachi;
+sprintingSprite = spr_zombieMariachi;
+hitSprite = spr_mariachiManHit;
+
 

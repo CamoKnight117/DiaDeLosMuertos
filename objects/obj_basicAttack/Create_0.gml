@@ -2,6 +2,7 @@ depth = -1*y;
 
 damage = 10;
 stunLength = 30;
+knockbackPower = 5;
 Owner = 0;
 DMGFrame = 15;
 animationLength = 30;

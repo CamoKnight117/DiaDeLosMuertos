@@ -31,6 +31,12 @@ function stunMechanics(){
 			{
 				isHit = false;
 			}
+			
+			if(knockbackVelocity > 0)
+			{
+			groundX -= hitOrigin*knockbackVelocity;
+			knockbackVelocity--;
+			}
 	}
 }
 

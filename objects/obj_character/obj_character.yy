@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_character",
   "spriteId": {
-    "name": "spr_playerIdle",
-    "path": "sprites/spr_playerIdle/spr_playerIdle.yy",
+    "name": "spr_mariachiManTempIdle",
+    "path": "sprites/spr_mariachiManTempIdle/spr_mariachiManTempIdle.yy",
   },
   "solid": false,
   "visible": true,

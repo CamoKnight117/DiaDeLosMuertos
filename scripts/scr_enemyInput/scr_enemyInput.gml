@@ -22,10 +22,11 @@ function scr_enemyInput(){
 		}
 	}
 
-	if(awake)
+	if(awake && instance_exists(obj_character))
 	{
 		playerX = obj_character.x;
 		playerY = obj_character.y;
+		
 		
 		if(x - playerX > 20 || x - playerX < -20 || y - playerY> 20 || y - playerY < -20)
 		{
@@ -77,6 +78,7 @@ function scr_enemyInput(){
 				basicAttack = true;
 				attackCountdown = attackDelay/4 + random(attackDelay*1.5);
 			}
+			
 	}
 
 	

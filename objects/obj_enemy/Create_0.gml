@@ -16,6 +16,7 @@ frameCounter = 0;
 frameIndex = 0;
 idleSprite = spr_zombieMariachi;
 runningSprite = spr_zombieMariachi;
+attackingSprite = spr_zombieMariachi;
 sprintingSprite = spr_zombieMariachi;
 hitSprite = spr_mariachiManHit;
 

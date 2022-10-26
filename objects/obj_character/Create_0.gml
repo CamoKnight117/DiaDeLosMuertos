@@ -6,6 +6,7 @@ animationFPS = 6;
 frameCounter = 0;
 frameIndex = 0;
 idleSprite = spr_mariachiManTempIdle;
+attackingSprite = spr_mariachiManTempIdle;
 runningSprite = spr_mariachiManWalk;
 sprintingSprite = spr_mariachiManWalk;
 hitSprite = spr_mariachiManHit;

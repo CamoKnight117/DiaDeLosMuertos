@@ -106,47 +106,23 @@ function walkMovement(){
 			//The player moves too fast in x direction in those cases without this correction
 			if((horizontal_dir == 1 and vertical_dir == -1) or (horizontal_dir == -1 and vertical_dir == 1) )
 			{
-				//Bad collision code that isn't working
-				/*
-				var yWontCollide = true;
-				var xChange = 2*verRunSpeed * vertical_dir;
-				var yChange = verRunSpeed * vertical_dir;
-				with(collisionTracker)
-				{
-					yWontCollide = place_free(x, y + yChange)
-				}		
-				*/
-				groundX += -1 * verRunSpeed * vertical_dir;		
-				groundX += -1 * verRunSpeed * vertical_dir;
-				//if(yWontCollide)
-				//{
+				
+				groundX += -1 * verRunSpeed * vertical_dir;					
 				groundY += verRunSpeed * vertical_dir;
-				//}
+				
 				if(sprint)
 				{
 				var sprintBonus = verRunSpeed * (sprintMultiplier - 1)
 				groundY +=  sprintBonus * vertical_dir;
 				groundX += sprintBonus * horizontal_dir;
 				}
-
 			}
 			else //Other movement cases
 			{
-				//Some bad collision code that isn't working
-				/*
-				var yWontCollide = true;
-				var xChange = horRunSpeed * horizontal_dir - (verRunSpeed * vertical_dir);
-				var yChange = verRunSpeed * vertical_dir;  
-				with(collisionTracker)
-				{
-					yWontCollide = place_free(x, y + yChange)
-				}*/
 					groundX += horRunSpeed * horizontal_dir;
 					groundX -= verRunSpeed * vertical_dir;
-					//if(yWontCollide)
-					//{
 					groundY += verRunSpeed * vertical_dir;
-					//}
+
 					if(sprint)
 					{
 					var sprintBonus = verRunSpeed * (sprintMultiplier - 1)
@@ -154,7 +130,6 @@ function walkMovement(){
 					groundX +=  sprintBonus * horizontal_dir;
 					groundX -= sprintBonus * vertical_dir;
 					}
-				//}
 			}
 }
 

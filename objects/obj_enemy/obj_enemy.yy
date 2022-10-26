@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_enemy",
   "spriteId": {
-    "name": "spr_playerIdle",
-    "path": "sprites/spr_playerIdle/spr_playerIdle.yy",
+    "name": "spr_zombieMariachi",
+    "path": "sprites/spr_zombieMariachi/spr_zombieMariachi.yy",
   },
   "solid": false,
   "visible": true,

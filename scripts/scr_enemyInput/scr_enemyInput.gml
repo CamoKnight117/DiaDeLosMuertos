@@ -24,8 +24,8 @@ function scr_enemyInput(){
 
 	if(awake && instance_exists(obj_character))
 	{
-		playerX = obj_character.x;
-		playerY = obj_character.y;
+		playerX = obj_character.groundX;
+		playerY = obj_character.groundY;
 		
 		
 		if(x - playerX > 20 || x - playerX < -20 || y - playerY> 20 || y - playerY < -20)

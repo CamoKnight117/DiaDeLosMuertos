@@ -12,9 +12,14 @@ function scr_movement() {
 		if(isAttacking == false) //You can't initiate a jump if attacking
 		{		
 			walkMovement();
-			jumpMovement();			
+			jumpAction();	
 		}
 	}
+	jumpMovement();	
+	
+	y = groundY - jumpPosition;
+	x = groundX;
+	
 	depth = -1*groundY; //Set the depth of the object so that they draw in front of the right things
 }
 
@@ -96,9 +101,6 @@ function walkMovement(){
 			{
 				idle = true;
 			}
-	
-			y = groundY - jumpPosition;
-			x = groundX;
 
 			//Walking Mechanics
 	
@@ -133,15 +135,15 @@ function walkMovement(){
 			}
 }
 
-function jumpMovement(){
-			//Jumping Mechanics
-			if(space && grounded && jumpDelayCounter == 0)
+
+function jumpMovement(){ //Things to always do if you're in the air
+	if(grounded == false)
+	{
+			if(isHit)
 			{
-				grounded = false;
-				jumpVelocity = jumpPower;
-				jumpDelayCounter = jumpDelay*fps; 
+				show_debug_message("Hit while jumping");
 			}
-			if(!grounded)
+						if(!grounded)
 			{
 			jumpPosition += jumpVelocity;
 			}
@@ -163,9 +165,19 @@ function jumpMovement(){
 					jumpVelocity -= jumpDrag/jumpFeather;	
 				}
 			}
-	
-			if(jumpDelayCounter > 0)
+	}
+	if(jumpDelayCounter > 0)
+	{
+	jumpDelayCounter--; //Decrement
+	}
+}
+
+function jumpAction(){
+			//Jumping Mechanics
+			if(space && grounded && jumpDelayCounter == 0 && isHit == false)
 			{
-			jumpDelayCounter--; //Decrement
+				grounded = false;
+				jumpVelocity = jumpPower;
+				jumpDelayCounter = jumpDelay*fps; 
 			}
 }

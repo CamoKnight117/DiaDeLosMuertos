@@ -1,9 +1,6 @@
-animationCounter++;
+/// @description Insert description here
+// You can write your code in this editor
 
-if(animationCounter > animationLength)
-{
-	instance_destroy();
-}
 
 
 

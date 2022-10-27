@@ -6,7 +6,7 @@ function scr_animate(){
 		frameIndex = 0;
 	}
  
- maxFrameCounter = fps/animationFPS;
+ maxFrameCounter = 60/animationFPS;
  
  if(idle)
  {
@@ -37,9 +37,10 @@ if(frameCounter >= maxFrameCounter)
 {
 	frameCounter = 0;
 	
-	if(frameIndex < sprite_get_number(sprite_index) - 1)
+	if(frameIndex <= sprite_get_number(sprite_index) - 1)
 	{
 		frameIndex++
+		attackingCounter++;
 	}
 	else
 	{
@@ -49,5 +50,5 @@ if(frameCounter >= maxFrameCounter)
 }
 image_index = frameIndex;
 
- frameCounter += 1;
+ frameCounter++;
 }

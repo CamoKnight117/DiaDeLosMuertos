@@ -45,22 +45,21 @@ function stunMechanics(){
 function attackMechanics(){
 			if(isAttacking)
 		{
-			if(attackingCounter == attackLength)
+			if(attackingCounter >= attackLength)
 			{
 				isAttacking = false;
-			}
-			else
-			{
-			attackingCounter++;
+				instance_destroy(attack);
 			}
 		}	
 		else if(basicAttack && grounded && isAttacking != true) //Check if isAttacking needs to be set to true
 		{
 			isAttacking = true;
+			running = false;
+			sprinting = false;
 			idle = false;
 			beginAnimation = true;
 			attackingCounter = 0;
-			var attack = instance_create_depth(x,y,depth,obj_basicAttack);	
+			attack = instance_create_depth(x,y,depth,obj_basicAttack);	
 			if(image_xscale = 1)
 			{
 			attack.x = x + attack.xOffset;

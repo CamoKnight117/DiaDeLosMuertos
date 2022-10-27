@@ -1,6 +1,11 @@
 function scr_animate(){
+	
+	if(beginAnimation)
+	{
+		frameCounter = 0;
+		frameIndex = 0;
+	}
  
- frameCounter += 1;
  maxFrameCounter = fps/animationFPS;
  
  if(idle)
@@ -40,6 +45,9 @@ if(frameCounter >= maxFrameCounter)
 	{
 		frameIndex = 0;
 	}
-	image_index = frameIndex;
+	
 }
+image_index = frameIndex;
+
+ frameCounter += 1;
 }

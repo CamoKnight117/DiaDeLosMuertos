@@ -27,7 +27,6 @@ attackingCounter = 0;
 
 //Sprite/Animation variables
 animationFPS = 6;
-frameCounter = 0;
 frameIndex = 0;
 idleSprite = spr_playerIdle;
 attackingSprite = spr_playerIdle;
@@ -35,6 +34,7 @@ runningSprite = spr_playerWalkingSpritesheet;
 sprintingSprite = spr_playerWalkingSpritesheet;
 hitSprite = spr_enemyHit;
 image_speed = 0;
+beginAnimation = false; //Set true when an animation is just started!
 
 HP = 100;
 stunCounter = 0;

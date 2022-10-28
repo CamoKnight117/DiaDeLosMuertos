@@ -11,4 +11,6 @@ runningSprite = spr_mariachiManWalk;
 sprintingSprite = spr_mariachiManWalk;
 hitSprite = spr_mariachiManHit;
 
+collision = instance_create_depth(groundX,groundY,depth + 1,obj_collisionShape);
+
 

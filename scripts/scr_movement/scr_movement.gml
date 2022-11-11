@@ -143,6 +143,24 @@ function walkMovement(){
 					groundX -= sprintBonus * vertical_dir;
 					}
 			}
+			
+			if(groundX > global.walkBorderRight)
+			{
+				groundX = global.walkBorderRight;
+			}
+			else if(groundX < global.walkBorderLeft)
+			{
+				groundX = global.walkBorderLeft;
+			}
+			
+			if(groundY > global.walkBorderBottom)
+			{
+				groundY = global.walkBorderBottom;
+			}
+			else if(groundY < global.walkBorderTop)
+			{
+				groundY = global.walkBorderTop;
+			}
 }
 
 

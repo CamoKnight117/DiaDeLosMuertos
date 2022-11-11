@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_background",
   "spriteId": {
-    "name": "spr_background",
-    "path": "sprites/spr_background/spr_background.yy",
+    "name": "spr_StreetBackgroundSprite",
+    "path": "sprites/spr_StreetBackgroundSprite/spr_StreetBackgroundSprite.yy",
   },
   "solid": false,
   "visible": true,

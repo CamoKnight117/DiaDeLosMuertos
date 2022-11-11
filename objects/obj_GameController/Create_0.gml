@@ -11,17 +11,20 @@ global.pickupOne = false;
 global.pickupTwo = false;
 global.pickupThree = false;
 
-pickupOne = instance_create_layer(200,200,layer_get_id("Instances"),obj_pickupItem);
-pickupTwo = instance_create_layer(100,200,layer_get_id("Instances"),obj_pickupItem);
-pickupThree = instance_create_layer(150,200,layer_get_id("Instances"),obj_pickupItem);
+randomX1 = random_range(15,485);
+randomY1 = random_range(152,319);
+randomX2 = random_range(15,485);
+randomY2 = random_range(152,319);
+randomX3 = random_range(15,485);
+randomY3 = random_range(152,319);
+
+pickupOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_pickupItem);
+pickupTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_pickupItem);
+pickupThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_pickupItem);
 
 pickupOne.pickupNumber = 1;
 pickupTwo.pickupNumber = 2;
 pickupThree.pickupNumber = 3;
-
-pickupOne.depth = pickupOne.y * -1;
-pickupTwo.depth = pickupTwo.y * -1;
-pickupThree.depth = pickupThree.y * -1;
 
 pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI2 = instance_create_layer(460,25,layer_get_id("GUI_Layer"),obj_pickupGUI);

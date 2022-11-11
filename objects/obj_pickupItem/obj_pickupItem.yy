@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_pickupItem",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_pickupWhite",
+    "path": "sprites/spr_pickupWhite/spr_pickupWhite.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

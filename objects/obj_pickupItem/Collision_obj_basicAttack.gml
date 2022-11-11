@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(true)//abs(other.depth - depth) < 35)
+if(other.animationCounter == other.DMGFrame && other.Owner.object_index == obj_character)
 {
 if(pickupNumber == 1)
 {

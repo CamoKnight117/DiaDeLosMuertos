@@ -40,6 +40,7 @@ beginAnimation = false; //Set true when an animation is just started!
 
 
 HP = 100;
+max_HP = HP;
 stunCounter = 0;
 
 //Movement speeds for scr_movement

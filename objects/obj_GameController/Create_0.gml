@@ -23,9 +23,9 @@ pickupOne.depth = pickupOne.y * -1;
 pickupTwo.depth = pickupTwo.y * -1;
 pickupThree.depth = pickupThree.y * -1;
 
-pickupGUI1 = instance_create_layer(200,75,layer_get_id("GUI_Layer"),obj_pickupGUI);
-pickupGUI2 = instance_create_layer(100,75,layer_get_id("GUI_Layer"),obj_pickupGUI);
-pickupGUI3 = instance_create_layer(150,75,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI2 = instance_create_layer(460,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI3 = instance_create_layer(435,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 
 pickupGUI1.pickupNumber = 1;
 pickupGUI2.pickupNumber = 2;

@@ -6,6 +6,7 @@ if(pickupNumber == 1)
 	if(global.pickupOne)
 	{
 		sprite_index = spr_pickupWhite;
+		image_alpha = 1;
 	}
 	else
 	{
@@ -17,6 +18,7 @@ if(pickupNumber == 2)
 	if(global.pickupTwo)
 	{
 		sprite_index = spr_pickupWhite;
+		image_alpha = 1;
 	}
 	else
 	{
@@ -28,6 +30,7 @@ if(pickupNumber == 3)
 	if(global.pickupThree)
 	{
 		sprite_index = spr_pickupWhite;
+		image_alpha = 1;
 	}
 	else
 	{

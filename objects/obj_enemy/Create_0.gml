@@ -18,6 +18,6 @@ idleSprite = spr_zombieMariachi;
 runningSprite = spr_zombieMariachi;
 attackingSprite = spr_zombieMariachi;
 sprintingSprite = spr_zombieMariachi;
-hitSprite = spr_mariachiManHit;
+hitSprite = spr_zombieHit;
 
 

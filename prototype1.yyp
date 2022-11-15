@@ -33,6 +33,7 @@
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":3,},
     {"id":{"name":"obj_S1M","path":"objects/obj_S1M/obj_S1M.yy",},"order":1,},
     {"id":{"name":"scr_input","path":"scripts/scr_input/scr_input.yy",},"order":0,},
+    {"id":{"name":"spr_zombieHit","path":"sprites/spr_zombieHit/spr_zombieHit.yy",},"order":34,},
     {"id":{"name":"rm_S1A","path":"rooms/rm_S1A/rm_S1A.yy",},"order":0,},
     {"id":{"name":"spr_SlideBG1","path":"sprites/spr_SlideBG1/spr_SlideBG1.yy",},"order":0,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":4,},

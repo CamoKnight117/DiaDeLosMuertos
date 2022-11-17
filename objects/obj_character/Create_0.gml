@@ -7,6 +7,7 @@ attackingSprite = spr_mariachiManPunch;
 runningSprite = spr_mariachiManWalk;
 sprintingSprite = spr_mariachiManWalk;
 hitSprite = spr_mariachiManHit;
+gamepad_set_axis_deadzone(0, 0.7);
 
 basicAttackFrameCounts = [7, 7, 7, 5, 5];
 basicAttackDamageStart = 4;

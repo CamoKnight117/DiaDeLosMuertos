@@ -29,6 +29,6 @@ horRunSpeed = 1.0;
 verRunSpeed = .50;
 walkAnimationFrameCounts = [10,10,10,10,10,10,10,10,10,10];
 
-
+isEnemy = true;
 
 

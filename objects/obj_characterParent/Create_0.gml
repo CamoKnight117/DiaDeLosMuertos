@@ -68,3 +68,5 @@ jumpPosition = 0; //Keeps track of the players height in their jump
 shadow = instance_create_depth(groundX,groundY,depth + 1,obj_shadow);
 alarm[0] = 1;
 
+isEnemy = false;
+

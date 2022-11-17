@@ -126,22 +126,25 @@ function walkMovement(){
 					}
 			}
 			
-			if(groundX > global.walkBorderRight)
+			if(isEnemy == false)
 			{
-				groundX = global.walkBorderRight;
-			}
-			else if(groundX < global.walkBorderLeft)
-			{
-				groundX = global.walkBorderLeft;
-			}
+				if(groundX > global.walkBorderRight)
+				{
+					groundX = global.walkBorderRight;
+				}
+				else if(groundX < global.walkBorderLeft)
+				{
+					groundX = global.walkBorderLeft;
+				}
 			
-			if(groundY > global.walkBorderBottom)
-			{
-				groundY = global.walkBorderBottom;
-			}
-			else if(groundY < global.walkBorderTop)
-			{
-				groundY = global.walkBorderTop;
+				if(groundY > global.walkBorderBottom)
+				{
+					groundY = global.walkBorderBottom;
+				}
+				else if(groundY < global.walkBorderTop)
+				{
+					groundY = global.walkBorderTop;
+				}
 			}
 }
 

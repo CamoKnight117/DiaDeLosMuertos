@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+zombieCreationCounter = 0;
+zombieCreationThreshold = 180;
 
 global.walkBorderLeft = 0;
 global.walkBorderRight = 512;
@@ -25,6 +27,13 @@ xLowBound = 0;
 xHighBound = 512;
 yLowBound = 334;
 yHighBound = 180;
+
+zombieXLowBound = -100;
+zombieXHighBound = 612;
+zombieYLowBound = 434;
+zombieYHighBound = 180;
+
+
 
 randomX1 = random_range(xLowBound,xHighBound);
 randomY1 = random_range(yLowBound,yHighBound);

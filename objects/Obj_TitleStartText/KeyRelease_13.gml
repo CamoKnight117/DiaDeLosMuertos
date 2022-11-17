@@ -1,2 +1,2 @@
-//starts game on enter up key
+//send to title screen
 room_goto(rm_S1A);

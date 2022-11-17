@@ -149,11 +149,7 @@ function walkMovement(){
 function jumpMovement(){ //Things to always do if you're in the air
 	if(grounded == false)
 	{
-			if(isHit)
-			{
-				show_debug_message("Hit while jumping");
-			}
-						if(!grounded)
+			if(!grounded)
 			{
 			jumpPosition += jumpVelocity;
 			}

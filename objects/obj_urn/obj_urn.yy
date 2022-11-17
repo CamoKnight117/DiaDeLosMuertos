@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pickupItem",
+  "name": "obj_urn",
   "spriteId": {
     "name": "spr_pickupWhite",
     "path": "sprites/spr_pickupWhite/spr_pickupWhite.yy",

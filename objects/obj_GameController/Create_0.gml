@@ -28,19 +28,29 @@ xHighBound = 512;
 yLowBound = 334;
 yHighBound = 180;
 
-zombieXLowBound = -100;
-zombieXHighBound = 612;
-zombieYLowBound = 434;
-zombieYHighBound = 180;
+zombieXLowBound1 = -100;
+zombieXHighBound1 = 0;
+zombieYLowBound1 = 434;
+zombieYHighBound1 = 300;
+
+zombieXLowBound2 = 612;
+zombieXHighBound2 = 530;
+zombieYLowBound2 = 434;
+zombieYHighBound2 = 300;
+
+zombieXLowBound3 = -100;
+zombieXHighBound3 = 612;
+zombieYLowBound3 = 434;
+zombieYHighBound3 = 334;
 
 
 
-randomX1 = random_range(xLowBound,xHighBound);
-randomY1 = random_range(yLowBound,yHighBound);
-randomX2 = random_range(xLowBound,xHighBound);
-randomY2 = random_range(yLowBound,yHighBound);
-randomX3 = random_range(xLowBound,xHighBound);
-randomY3 = random_range(yLowBound,yHighBound);
+randomX1 = irandom_range(xLowBound,xHighBound);
+randomY1 = irandom_range(yLowBound,yHighBound);
+randomX2 = irandom_range(xLowBound,xHighBound);
+randomY2 = irandom_range(yLowBound,yHighBound);
+randomX3 = irandom_range(xLowBound,xHighBound);
+randomY3 = irandom_range(yLowBound,yHighBound);
 
 pickupUrnOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
 pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
@@ -50,8 +60,8 @@ var emptyUrnsNum = 10;
 for(i = 0; i < emptyUrnsNum; i++)
 {
 	
-	randomX1 = random_range(xLowBound,xHighBound);
-	randomY1 = random_range(yLowBound,yHighBound);
+	randomX1 = irandom_range(xLowBound,xHighBound);
+	randomY1 = irandom_range(yLowBound,yHighBound);
 
 	instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
 

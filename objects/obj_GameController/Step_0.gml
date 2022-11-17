@@ -9,17 +9,22 @@ if(instance_exists(obj_enemy) == false || zombieCreationCounter >= zombieCreatio
 {
 	zombieCreationCounter = 0;
 	
-	zombieX = random_range(zombieXLowBound, zombieXHighBound);
-	zombieY = random_range(zombieYLowBound, zombieYHighBound);
+	var genMode = irandom_range(1,3);
 	
-	while(zombieX > xLowBound && zombieX < xHighBound)
+	switch(genMode)
 	{
-		zombieX = random_range(zombieXLowBound, zombieXHighBound);
-	}
-	
-		while(zombieY > yLowBound && zombieY < yHighBound)
-	{
-		zombieY = random_range(zombieYLowBound, zombieYHighBound);
+		case 1:
+			zombieX = irandom_range(zombieXLowBound1, zombieXHighBound1);
+			zombieY = irandom_range(zombieYLowBound1, zombieYHighBound1);
+			break;
+		case 2:
+			zombieX = irandom_range(zombieXLowBound2, zombieXHighBound2);
+			zombieY = irandom_range(zombieYLowBound2, zombieYHighBound2);
+			break;
+		case 3:
+			zombieX = irandom_range(zombieXLowBound3, zombieXHighBound3);
+			zombieY = irandom_range(zombieYLowBound3, zombieYHighBound3);
+		break;
 	}	
 	
 	zombie = instance_create_depth(zombieX,zombieY,0,obj_enemy);

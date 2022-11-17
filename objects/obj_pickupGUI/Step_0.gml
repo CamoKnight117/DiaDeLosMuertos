@@ -5,36 +5,36 @@ if(pickupNumber == 1)
 {
 	if(global.pickupOne)
 	{
-		sprite_index = spr_pickupWhite;
+		sprite_index = spr_artifactFlower;
 		image_alpha = 1;
 	}
 	else
 	{
-		sprite_index = spr_pickupGrey;
+		sprite_index = spr_artifactFlower;
 	}
 }
 if(pickupNumber == 2)
 {
 	if(global.pickupTwo)
 	{
-		sprite_index = spr_pickupWhite;
+		sprite_index = spr_artifactBread;
 		image_alpha = 1;
 	}
 	else
 	{
-		sprite_index = spr_pickupGrey;
+		sprite_index = spr_artifactBread;
 	}
 }
 if(pickupNumber == 3)
 {
 	if(global.pickupThree)
 	{
-		sprite_index = spr_pickupWhite;
+		sprite_index = spr_artifactGrandma;
 		image_alpha = 1;
 	}
 	else
 	{
-		sprite_index = spr_pickupGrey;
+		sprite_index = spr_artifactGrandma;
 	}
 }
 

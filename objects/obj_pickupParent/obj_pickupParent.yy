@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_pickupParent",
   "spriteId": {
-    "name": "spr_flower",
-    "path": "sprites/spr_flower/spr_flower.yy",
+    "name": "spr_artifactFlower",
+    "path": "sprites/spr_artifactFlower/spr_artifactFlower.yy",
   },
   "solid": false,
   "visible": true,

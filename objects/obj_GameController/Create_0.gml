@@ -11,6 +11,16 @@ global.pickupOne = false;
 global.pickupTwo = false;
 global.pickupThree = false;
 
+
+if debug_mode
+{
+    random_set_seed(1);
+}
+else
+{
+	randomize();
+}
+
 randomX1 = random_range(15,485);
 randomY1 = random_range(152,319);
 randomX2 = random_range(15,485);
@@ -21,6 +31,14 @@ randomY3 = random_range(152,319);
 pickupUrnOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
 pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
 pickupUrnThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_urn);
+
+var emptyUrnsNum = 10;
+for(i = 0; i < emptyUrnsNum; i++)
+{
+	randomX1 = random_range(15,485);
+	randomY1 = random_range(152,319);
+	instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
+}
 
 pickupUrnOne.pickupNumber = 1;
 pickupUrnTwo.pickupNumber = 2;

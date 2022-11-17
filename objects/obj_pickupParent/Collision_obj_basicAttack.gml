@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(aliveCounter > 200)
+if(aliveCounter > 10)
 {
 	if(pickupNumber == 1)
 	{

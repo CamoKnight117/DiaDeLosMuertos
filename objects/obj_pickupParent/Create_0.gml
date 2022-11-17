@@ -4,8 +4,6 @@
 
 pickupNumber = 0;
 depth = -1*y + 58;
-image_xscale = 0.5;
-image_yscale = 0.5;
 
 aliveCounter = 0;
 

@@ -18,13 +18,13 @@ randomY2 = random_range(152,319);
 randomX3 = random_range(15,485);
 randomY3 = random_range(152,319);
 
-pickupOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_pickupItem);
-pickupTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_pickupItem);
-pickupThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_pickupItem);
+pickupUrnOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
+pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
+pickupUrnThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_urn);
 
-pickupOne.pickupNumber = 1;
-pickupTwo.pickupNumber = 2;
-pickupThree.pickupNumber = 3;
+pickupUrnOne.pickupNumber = 1;
+pickupUrnTwo.pickupNumber = 2;
+pickupUrnThree.pickupNumber = 3;
 
 pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI2 = instance_create_layer(460,25,layer_get_id("GUI_Layer"),obj_pickupGUI);

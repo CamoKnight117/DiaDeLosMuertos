@@ -5,4 +5,10 @@ if(HP <= 0)
 	instance_destroy(self);
 }
 
+if(hasAttackObject)
+{
+	instance_destroy(attack);
+	hasAttackObject = false;
+}
+
 

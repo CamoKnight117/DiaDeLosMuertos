@@ -9,3 +9,4 @@ xOffset = 0;
 yOffset = -20;
 
 depthDifToDamage = 35;
+audio_play_sound(snd_playerHit,4,false);

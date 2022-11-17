@@ -16,4 +16,5 @@ if(aliveCounter > 10)
 		global.pickupThree = true;
 	}
 	instance_destroy();
+	audio_play_sound(snd_pickupitem, 5, false);
 }

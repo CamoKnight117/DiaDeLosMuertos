@@ -37,6 +37,8 @@ if(isHit)
 	 {
 		 audio_play_sound(snd_zombie ,5, false);
 	 }
+	 
+	 
  }
  
  else if(isAttacking)

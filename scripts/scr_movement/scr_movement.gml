@@ -185,6 +185,12 @@ function jumpAction(){
 			//Jumping Mechanics
 			if(space && grounded && jumpDelayCounter == 0 && isHit == false)
 			{
+					
+	if (space = true) and !audio_is_playing(snd_jump)
+	{
+		audio_play_sound(snd_jump, 5, false);
+	}
+
 				grounded = false;
 				jumpVelocity = jumpPower;
 				jumpDelayCounter = jumpDelay*fps; 

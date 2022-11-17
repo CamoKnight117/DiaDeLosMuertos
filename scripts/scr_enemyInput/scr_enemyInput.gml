@@ -8,7 +8,7 @@ function scr_enemyInput(){
 	
 	if(isHit) 
 	{
-		//audio_play_sound(snd_zombie ,5, false);
+		
 	}
 	
 	if(isAttacking == false && attackCountdown > 0)

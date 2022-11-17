@@ -57,7 +57,6 @@
     {"id":{"name":"obj_GameOverText","path":"objects/obj_GameOverText/obj_GameOverText.yy",},"order":17,},
     {"id":{"name":"spr_S2A1","path":"sprites/spr_S2A1/spr_S2A1.yy",},"order":4,},
     {"id":{"name":"obj_basicAttack","path":"objects/obj_basicAttack/obj_basicAttack.yy",},"order":5,},
-    {"id":{"name":"spr_pickupGrey","path":"sprites/spr_pickupGrey/spr_pickupGrey.yy",},"order":30,},
     {"id":{"name":"spr_mariachiManIdle","path":"sprites/spr_mariachiManIdle/spr_mariachiManIdle.yy",},"order":20,},
     {"id":{"name":"obj_characterParent","path":"objects/obj_characterParent/obj_characterParent.yy",},"order":0,},
     {"id":{"name":"spr_S6A","path":"sprites/spr_S6A/spr_S6A.yy",},"order":12,},

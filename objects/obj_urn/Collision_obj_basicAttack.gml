@@ -12,6 +12,8 @@ if(pickupNumber == 2)
 	newPickup = instance_create_layer(x,y,layer_get_id("Instances"),obj_pickupParent);
 	newPickup.pickupNumber = 2;
 	newPickup.sprite_index = spr_artifactBread;
+	newPickup.image_xscale = 0.75;
+	newPickup.image_yscale = 0.75;
 }
 if(pickupNumber == 3)
 {

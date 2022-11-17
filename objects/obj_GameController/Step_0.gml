@@ -31,4 +31,12 @@ if(instance_exists(obj_enemy) == false || zombieCreationCounter >= zombieCreatio
 	zombie.following = true;
 }
 
-
+if(global.pickupOne &&
+global.pickupTwo &&
+global.pickupThree)
+{
+	arrowOne.visible = true;
+	arrowTwo.visible = true;
+	arrowThree.visible = true;
+	rightWall.active = true;
+}

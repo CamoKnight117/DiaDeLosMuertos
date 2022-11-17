@@ -11,6 +11,7 @@ if(pickupNumber == 1)
 	else
 	{
 		sprite_index = spr_artifactFlower;
+		image_alpha = min(0.5, abs(sin(imageAlphaVar)));
 	}
 }
 if(pickupNumber == 2)
@@ -23,6 +24,8 @@ if(pickupNumber == 2)
 	else
 	{
 		sprite_index = spr_artifactBread;
+
+		image_alpha = min(0.5, abs(sin(imageAlphaVar)));
 	}
 }
 if(pickupNumber == 3)
@@ -35,7 +38,12 @@ if(pickupNumber == 3)
 	else
 	{
 		sprite_index = spr_artifactGrandma;
+
+		image_alpha = min(0.5, abs(sin(imageAlphaVar)));
 	}
 }
+
+
+		imageAlphaVar += 0.025;
 
 

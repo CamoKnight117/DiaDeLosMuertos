@@ -10,6 +10,7 @@
     {"id":{"name":"obj_S2M","path":"objects/obj_S2M/obj_S2M.yy",},"order":3,},
     {"id":{"name":"obj_skipSlides","path":"objects/obj_skipSlides/obj_skipSlides.yy",},"order":16,},
     {"id":{"name":"spr_TitleBackground","path":"sprites/spr_TitleBackground/spr_TitleBackground.yy",},"order":8,},
+    {"id":{"name":"spr_altarPlaceholder","path":"sprites/spr_altarPlaceholder/spr_altarPlaceholder.yy",},"order":32,},
     {"id":{"name":"obj_S7M","path":"objects/obj_S7M/obj_S7M.yy",},"order":12,},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},"order":4,},
     {"id":{"name":"obj_pickupGUI","path":"objects/obj_pickupGUI/obj_pickupGUI.yy",},"order":13,},

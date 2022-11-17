@@ -78,3 +78,13 @@ pickupGUI3 = instance_create_layer(435,25,layer_get_id("GUI_Layer"),obj_pickupGU
 pickupGUI1.pickupNumber = 1;
 pickupGUI2.pickupNumber = 2;
 pickupGUI3.pickupNumber = 3;
+
+arrowOne = instance_create_layer(224,228,layer_get_id("Instances"),obj_arrow);
+arrowTwo = instance_create_layer(160,300,layer_get_id("Instances"),obj_arrow);
+arrowThree = instance_create_layer(288,160,layer_get_id("Instances"),obj_arrow);
+arrowOne.visible = false;
+arrowTwo.visible = false;
+arrowThree.visible = false;
+
+rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObject);
+rightWall.active = false;

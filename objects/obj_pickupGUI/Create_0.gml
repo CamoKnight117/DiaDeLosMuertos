@@ -3,5 +3,6 @@
 
 pickupNumber = 0;
 image_alpha = 0.25;
+imageAlphaVar = 0;
 
 

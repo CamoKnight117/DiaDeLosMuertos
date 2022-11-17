@@ -3,15 +3,21 @@
 
 if(pickupNumber == 1)
 {
-	global.pickupOne = true;
+	newPickup = instance_create_layer(x,y,layer_get_id("Instances"),obj_pickupParent);
+	newPickup.pickupNumber = 1;
+	newPickup.sprite_index = spr_artifactFlower;
 }
 if(pickupNumber == 2)
 {
-	global.pickupTwo = true;
+	newPickup = instance_create_layer(x,y,layer_get_id("Instances"),obj_pickupParent);
+	newPickup.pickupNumber = 2;
+	newPickup.sprite_index = spr_artifactBread;
 }
 if(pickupNumber == 3)
 {
-	global.pickupThree = true;
+	newPickup = instance_create_layer(x,y,layer_get_id("Instances"),obj_pickupParent);
+	newPickup.pickupNumber = 3;
+	newPickup.sprite_index = spr_artifactGrandma;
 }
 
 instance_destroy(self);

@@ -12,14 +12,13 @@ attackCountdown = 0;
 basicAttackObject = obj_basicZombieAttack;
 attackDelay = 100; //Approximately how long an enemy takes to follow up attack
 
-animationFPS = 6;
-frameCounter = 0;
-frameIndex = 0;
 idleSprite = spr_zombieMariachi;
 runningSprite = spr_zombieMariachi;
 attackingSprite = spr_zombieMariachi;
 sprintingSprite = spr_zombieMariachi;
 hitSprite = spr_zombieHit;
+
+HP = 30;
 
 
 

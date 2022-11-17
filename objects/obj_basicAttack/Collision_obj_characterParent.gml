@@ -1,5 +1,5 @@
 if(((depth - other.depth) < depthDifToDamage) 
-&& Owner != other && animationCounter == DMGFrame 
+&& Owner != other && other.isHit == false
 && Owner.object_index != other.object_index 
 && Owner.isHit == false)
 {

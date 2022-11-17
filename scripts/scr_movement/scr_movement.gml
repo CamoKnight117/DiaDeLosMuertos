@@ -43,36 +43,18 @@ function stunMechanics(){
 }
 
 function attackMechanics(){
-			if(isAttacking)
-		{
-			if(attackingCounter >= attackLength)
-			{
-				isAttacking = false;
-				instance_destroy(attack);
-			}
-		}	
-		else if(basicAttack && grounded && isAttacking != true) //Check if isAttacking needs to be set to true
+
+		if(basicAttack && grounded && isAttacking != true) //Check if isAttacking needs to be set to true
 		{
 			isAttacking = true;
 			running = false;
 			sprinting = false;
 			idle = false;
-			beginAnimation = true;
-			attackingCounter = 0;
-			attack = instance_create_depth(x,y,depth,basicAttackObject);	
-			if(image_xscale = 1)
-			{
-			attack.x = x + attack.xOffset;
-			attack.y = y + attack.yOffset;
-			}
-			else
-			{
-				attack.x = x - attack.sprite_width - attack.xOffset;
-				attack.y = y + attack.yOffset; 
-			}					
-			attack.Owner = self;
-			attackLength = attack.animationLength;			
+			beginAnimation = true;	
 		}
+		
+		
+		//More attack mechanics done in the animation script
 }
 
 function walkMovement(){

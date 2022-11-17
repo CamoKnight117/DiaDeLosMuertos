@@ -94,6 +94,7 @@
     {"id":{"name":"rm_S6A","path":"rooms/rm_S6A/rm_S6A.yy",},"order":10,},
     {"id":{"name":"spr_S7M","path":"sprites/spr_S7M/spr_S7M.yy",},"order":14,},
     {"id":{"name":"obj_S6A","path":"objects/obj_S6A/obj_S6A.yy",},"order":10,},
+    {"id":{"name":"obj_attackParent","path":"objects/obj_attackParent/obj_attackParent.yy",},"order":1,},
     {"id":{"name":"rm_S7A","path":"rooms/rm_S7A/rm_S7A.yy",},"order":11,},
     {"id":{"name":"spr_SlideBG8","path":"sprites/spr_SlideBG8/spr_SlideBG8.yy",},"order":7,},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},"order":3,},

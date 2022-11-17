@@ -28,8 +28,15 @@ basicAttackObject = obj_basicAttack;
 attack = 0;
 
 //Sprite/Animation variables
-animationFPS = 6;
+animationFPS = 60;
 frameIndex = 0;
+frameCounter = 0;
+
+walkAnimationFrameCounts = [6,6,6,6,6,6,6,6,6,6];
+basicAttackFrameCounts = [60];
+basicAttackDamageStart = 0;
+hasAttackObject = false;
+
 idleSprite = spr_playerIdle;
 attackingSprite = spr_playerIdle;
 runningSprite = spr_playerWalkingSpritesheet;

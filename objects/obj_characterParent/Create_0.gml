@@ -24,6 +24,7 @@ running = false;
 sprinting = false;
 
 attackingCounter = 0;
+basicAttackObject = obj_basicAttack;
 attack = 0;
 
 //Sprite/Animation variables

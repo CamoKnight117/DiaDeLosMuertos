@@ -98,6 +98,7 @@
     {"id":{"name":"spr_SlideBG8","path":"sprites/spr_SlideBG8/spr_SlideBG8.yy",},"order":7,},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},"order":3,},
     {"id":{"name":"obj_pickupItem","path":"objects/obj_pickupItem/obj_pickupItem.yy",},"order":14,},
+    {"id":{"name":"obj_basicZombieAttack","path":"objects/obj_basicZombieAttack/obj_basicZombieAttack.yy",},"order":18,},
     {"id":{"name":"spr_S3A","path":"sprites/spr_S3A/spr_S3A.yy",},"order":7,},
     {"id":{"name":"snd_zombie","path":"sounds/snd_zombie/snd_zombie.yy",},"order":1,},
     {"id":{"name":"rm_S3A2","path":"rooms/rm_S3A2/rm_S3A2.yy",},"order":6,},

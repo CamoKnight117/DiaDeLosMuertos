@@ -59,7 +59,7 @@ function attackMechanics(){
 			idle = false;
 			beginAnimation = true;
 			attackingCounter = 0;
-			attack = instance_create_depth(x,y,depth,obj_basicAttack);	
+			attack = instance_create_depth(x,y,depth,basicAttackObject);	
 			if(image_xscale = 1)
 			{
 			attack.x = x + attack.xOffset;

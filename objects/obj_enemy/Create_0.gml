@@ -20,5 +20,7 @@ hitSprite = spr_zombieHit;
 
 HP = 30;
 
-
+//Movement speeds for scr_movement
+horRunSpeed = 1.0;
+verRunSpeed = .50;
 

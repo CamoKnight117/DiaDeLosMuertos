@@ -21,12 +21,17 @@ else
 	randomize();
 }
 
-randomX1 = random_range(15,485);
-randomY1 = random_range(152,319);
-randomX2 = random_range(15,485);
-randomY2 = random_range(152,319);
-randomX3 = random_range(15,485);
-randomY3 = random_range(152,319);
+xLowBound = 0;
+xHighBound = 512;
+yLowBound = 334;
+yHighBound = 180;
+
+randomX1 = random_range(xLowBound,xHighBound);
+randomY1 = random_range(yLowBound,yHighBound);
+randomX2 = random_range(xLowBound,xHighBound);
+randomY2 = random_range(yLowBound,yHighBound);
+randomX3 = random_range(xLowBound,xHighBound);
+randomY3 = random_range(yLowBound,yHighBound);
 
 pickupUrnOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
 pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
@@ -35,9 +40,12 @@ pickupUrnThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances
 var emptyUrnsNum = 10;
 for(i = 0; i < emptyUrnsNum; i++)
 {
-	randomX1 = random_range(15,485);
-	randomY1 = random_range(152,319);
+	
+	randomX1 = random_range(xLowBound,xHighBound);
+	randomY1 = random_range(yLowBound,yHighBound);
+
 	instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
+
 }
 
 pickupUrnOne.pickupNumber = 1;

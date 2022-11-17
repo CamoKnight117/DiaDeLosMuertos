@@ -38,6 +38,7 @@
     {"id":{"name":"spr_zombieHit","path":"sprites/spr_zombieHit/spr_zombieHit.yy",},"order":34,},
     {"id":{"name":"rm_S1A","path":"rooms/rm_S1A/rm_S1A.yy",},"order":0,},
     {"id":{"name":"spr_SlideBG1","path":"sprites/spr_SlideBG1/spr_SlideBG1.yy",},"order":0,},
+    {"id":{"name":"spr_winBetaBackground","path":"sprites/spr_winBetaBackground/spr_winBetaBackground.yy",},"order":40,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":4,},
     {"id":{"name":"spr_S2A2","path":"sprites/spr_S2A2/spr_S2A2.yy",},"order":6,},
     {"id":{"name":"spr_GameOverBG","path":"sprites/spr_GameOverBG/spr_GameOverBG.yy",},"order":32,},

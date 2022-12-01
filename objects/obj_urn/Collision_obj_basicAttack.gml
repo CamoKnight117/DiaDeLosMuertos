@@ -22,5 +22,5 @@ if(pickupNumber == 3)
 	newPickup.sprite_index = spr_artifactGrandma;
 }
 
+audio_play_sound(snd_potbreak, 5, false);
 instance_destroy(self);
-audio_play_sound(snd_potbreak, 5, false)

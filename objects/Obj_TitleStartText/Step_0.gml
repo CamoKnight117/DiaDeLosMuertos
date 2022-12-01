@@ -1,4 +1,6 @@
 //fade in and out
+event_inherited();
+src_gamepadSlideSkip()
 image_alpha += 0.01;
 
 if (image_alpha = 1)

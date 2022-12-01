@@ -7,6 +7,11 @@ function scr_enemyInput(){
 	basicAttack = false;
 	inputLagCounter--;
 	
+	if(isHit) 
+	{
+		
+	}
+	
 	if(isAttacking == false && attackCountdown > 0)
 	{
 	attackCountdown--;

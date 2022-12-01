@@ -23,3 +23,4 @@ if(pickupNumber == 3)
 }
 
 instance_destroy(self);
+audio_play_sound(snd_potbreak, 5, false)

@@ -32,7 +32,15 @@ if(isHit)
  {
 	 sprite_index = hitSprite;
 	 image_xscale = hitOrigin;
+	 
+	 if (hitSprite = spr_zombieHit) and !audio_is_playing(snd_zombie)
+	 {
+		 audio_play_sound(snd_zombie ,5, false);
+	 }
+	 
+	 
  }
+ 
  else if(isAttacking)
  {
 	 sprite_index = attackingSprite;

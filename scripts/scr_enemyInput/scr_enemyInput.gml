@@ -5,6 +5,7 @@ function scr_enemyInput(){
 	up = 0;
 	down = 0;
 	basicAttack = false;
+	inputLagCounter--;
 	
 	if(isAttacking == false && attackCountdown > 0)
 	{
@@ -32,26 +33,37 @@ function scr_enemyInput(){
 		{
 			if(following)
 			{
-				if(x - playerX > 20)
+				if(inputLagCounter <= 0)
 				{
-					left = 1;
-					right = 0;
-				}
-				else if(x - playerX < -20)
-				{
-					left = 0;
-					right = 1;
-				}
+					inputLagCounter = inputLag;
+					if(x - playerX > 20)
+					{
+						left = 1;
+						right = 0;
+					}
+					else if(x - playerX < -20)
+					{
+						left = 0;
+						right = 1;
+					}
 		
-				if(y - playerY> 20)
-				{
-					up = 1;
-					down = 0;
+					if(y - playerY> 20)
+					{
+						up = 1;
+						down = 0;
+					}
+					else if(y- playerY< -20)
+					{
+						up = 0;
+						down = 1;
+					}
 				}
-				else if(y- playerY< -20)
+				else
 				{
-					up = 0;
-					down = 1;
+					left = prevLeft;
+					right = prevRight;
+					up = prevUp;
+					down = prevDown;
 				}
 			}
 			else
@@ -90,4 +102,10 @@ function scr_enemyInput(){
 	if keyboard_check_pressed(vk_escape) game_end();
 	if keyboard_check_pressed(ord("R")) game_restart();
 
+
+	//Remember what our movement is for the next time around
+	prevUp = up;
+	prevDown = down;
+	prevLeft = left;
+	prevRight = right;
 }

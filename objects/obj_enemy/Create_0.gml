@@ -5,8 +5,16 @@ event_inherited();
 awake = false;
 
 following = false;
-followLag = 45; //Approximately how long an enemy takes to start following you
+followLag = 60; //Approximately how long an enemy takes to start following you
 followCounter = 0;
+
+inputLagCounter = 0;
+inputLag = 20;
+
+prevLeft = 0;
+prevRight = 0;
+prevUp = 0;
+prevDown = 0;
 
 attackCountdown = 0;
 basicAttackObject = obj_basicZombieAttack;

@@ -130,6 +130,7 @@
     {"id":{"name":"spr_altarMessage","path":"sprites/spr_altarMessage/spr_altarMessage.yy",},"order":37,},
     {"id":{"name":"spr_tabReturn","path":"sprites/spr_tabReturn/spr_tabReturn.yy",},"order":36,},
     {"id":{"name":"obj_basicZombieAttack","path":"objects/obj_basicZombieAttack/obj_basicZombieAttack.yy",},"order":18,},
+    {"id":{"name":"spr_confetti","path":"sprites/spr_confetti/spr_confetti.yy",},"order":38,},
     {"id":{"name":"spr_S3A","path":"sprites/spr_S3A/spr_S3A.yy",},"order":7,},
     {"id":{"name":"snd_zombie","path":"sounds/snd_zombie/snd_zombie.yy",},"order":1,},
     {"id":{"name":"rm_S3A2","path":"rooms/rm_S3A2/rm_S3A2.yy",},"order":6,},

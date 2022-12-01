@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 zombieCreationCounter = 0;
-zombieCreationThreshold = 1000;
+zombieCreationThreshold = 180;
 
 global.walkBorderLeft = 0;
 global.walkBorderRight = 512;

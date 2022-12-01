@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wallCollisionObject",
+  "name": "obj_wallCollisionObjectRoom1",
   "spriteId": {
     "name": "spr_wallCollisionObject",
     "path": "sprites/spr_wallCollisionObject/spr_wallCollisionObject.yy",
@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_wallCollisionObjectParent",
+    "path": "objects/obj_wallCollisionObjectParent/obj_wallCollisionObjectParent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,8 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],

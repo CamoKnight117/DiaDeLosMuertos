@@ -52,9 +52,7 @@ randomY2 = irandom_range(yLowBound,yHighBound);
 randomX3 = irandom_range(xLowBound,xHighBound);
 randomY3 = irandom_range(yLowBound,yHighBound);
 
-pickupUrnOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
-pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
-pickupUrnThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_urn);
+
 
 var emptyUrnsNum = 10;
 for(i = 0; i < emptyUrnsNum; i++)
@@ -67,9 +65,29 @@ for(i = 0; i < emptyUrnsNum; i++)
 
 }
 
-pickupUrnOne.pickupNumber = 1;
-pickupUrnTwo.pickupNumber = 2;
-pickupUrnThree.pickupNumber = 3;
+
+if(room == room0)
+{
+	pickupUrnOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);	
+	pickupUrnOne.pickupNumber = 1;
+	zombieCreationThreshold = 400;
+	
+}
+if(room == room1)
+{	
+	pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
+	pickupUrnTwo.pickupNumber = 2;
+	zombieCreationThreshold = 250;
+	global.pickupOne = true;
+}
+if(room == room2)
+{
+	pickupUrnThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_urn);
+	pickupUrnThree.pickupNumber = 3;
+	zombieCreationThreshold = 100;
+	global.pickupOne = true;
+	global.pickupTwo = true;
+}
 
 pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI2 = instance_create_layer(460,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
@@ -86,5 +104,18 @@ arrowOne.visible = false;
 arrowTwo.visible = false;
 arrowThree.visible = false;
 
-rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObject);
+
+if(room == room0)
+{
+	rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObjectRoom0);
+}
+if(room == room1)
+{
+	rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObjectRoom1);
+}
+if(room == room2)
+{
+	rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObjectRoom2);
+}
+
 rightWall.active = false;

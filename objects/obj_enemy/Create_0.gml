@@ -5,8 +5,9 @@ event_inherited();
 awake = false;
 
 following = false;
-followLag = 60; //Approximately how long an enemy takes to start following you
+followLag = 0; //Approximately how long an enemy takes to start following you
 followCounter = 0;
+followDistance = 500;
 
 inputLagCounter = 0;
 inputLag = 20;

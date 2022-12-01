@@ -5,7 +5,8 @@ if(instance_exists(obj_character) == false)
 	scr_gameOver();
 }
 
-if(instance_exists(obj_enemy) == false || zombieCreationCounter >= zombieCreationThreshold)
+if((instance_exists(obj_enemy) == false || zombieCreationCounter >= zombieCreationThreshold) 
+&& (room == room0 || room == room1 || room == room2))
 {
 	zombieCreationCounter = 0;
 	
@@ -31,9 +32,9 @@ if(instance_exists(obj_enemy) == false || zombieCreationCounter >= zombieCreatio
 	zombie.following = true;
 }
 
-if(global.pickupOne &&
-global.pickupTwo &&
-global.pickupThree)
+if((global.pickupOne && room == room0) 
+|| (global.pickupTwo && room == room1) 
+|| (global.pickupThree && room == room2))
 {
 	arrowOne.visible = true;
 	arrowTwo.visible = true;

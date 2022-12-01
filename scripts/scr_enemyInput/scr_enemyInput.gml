@@ -22,7 +22,7 @@ function scr_enemyInput(){
 	
 	if(awake == false)
 	{
-		if(distance_to_object(obj_character) < 200)
+		if(distance_to_object(obj_character) < followDistance)
 		{
 			awake = true;
 		}

@@ -1,0 +1,1 @@
+audio_play_sound(snd_ControlsTrack,1000,true)

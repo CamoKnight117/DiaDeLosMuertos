@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_MainTrack",
+  "name": "snd_ControlsTrack",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.09,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_MainTrack.mp3",
+  "soundFile": "snd_ControlsTrack.mp3",
   "duration": 201.1951,
   "parent": {
     "name": "Sounds",

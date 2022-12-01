@@ -1,0 +1,1 @@
+audio_play_sound(snd_slides,1000,true)

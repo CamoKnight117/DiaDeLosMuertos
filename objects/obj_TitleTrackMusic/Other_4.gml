@@ -1,1 +1,1 @@
-audio_play_sound(snd_TitleTrack,1000,true)
+audio_play_sound(snd_TitleTrack,100,true)

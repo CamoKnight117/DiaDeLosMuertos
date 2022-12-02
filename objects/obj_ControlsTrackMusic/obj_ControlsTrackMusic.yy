@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ControlsTrackMusic",
+  "name": "Obj_ControlsTrackMusic",
   "spriteId": null,
   "solid": false,
   "visible": true,

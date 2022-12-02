@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Snd_BattleTrack",
+  "name": "snd_battleTrack",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Snd_BattleTrack.mp3",
+  "soundFile": "snd_battleTrack.mp3",
   "duration": 227.03018,
   "parent": {
     "name": "Sounds",

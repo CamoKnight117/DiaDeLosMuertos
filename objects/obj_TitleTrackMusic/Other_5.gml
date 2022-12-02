@@ -1,1 +1,1 @@
-audio_stop_sound(snd_TitleTrack);
+audio_stop_sound(snd_TitleTrack)

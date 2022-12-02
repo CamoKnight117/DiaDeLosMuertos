@@ -1,1 +1,1 @@
-audio_stop_sound(snd_ControlsTrack);
+audio_stop_sound(snd_controlsTrack)

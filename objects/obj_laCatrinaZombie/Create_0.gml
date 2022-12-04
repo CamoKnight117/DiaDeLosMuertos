@@ -1,13 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-followLag = 60;
-HP = 20;
-
-isOnScreen = false;
 
 // Inherit the parent event
 event_inherited();
+
+
+followLag = 60;
+HP = 18;
+
+isOnScreen = false;
 
 attackDelay = 200;
 runningAway = false;

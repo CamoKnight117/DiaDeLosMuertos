@@ -5,7 +5,7 @@ zombieCreationCounter = 0;
 zombieCreationThreshold = 180;
 
 laCatrinaCreationCounter = 0;
-laCatrinaCreationThreshold = 800;
+laCatrinaCreationThreshold = 1000;
 
 global.walkBorderLeft = 0;
 global.walkBorderRight = 512;
@@ -80,14 +80,14 @@ if(room == room1)
 {	
 	pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
 	pickupUrnTwo.pickupNumber = 2;
-	zombieCreationThreshold = 250;
+	zombieCreationThreshold = 300;
 	global.pickupOne = true;
 }
 if(room == room2)
 {
 	pickupUrnThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_urn);
 	pickupUrnThree.pickupNumber = 3;
-	zombieCreationThreshold = 100;
+	zombieCreationThreshold = 200;
 	global.pickupOne = true;
 	global.pickupTwo = true;
 }

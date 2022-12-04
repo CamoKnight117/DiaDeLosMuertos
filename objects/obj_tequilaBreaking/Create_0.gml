@@ -3,6 +3,7 @@
 
 image_speed = 0;
 animationCounter = 0;
-animationThreshold = 10;
+animationThreshold = 2;
+
 
 

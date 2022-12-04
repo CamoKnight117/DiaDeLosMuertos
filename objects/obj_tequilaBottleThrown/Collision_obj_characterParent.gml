@@ -14,6 +14,7 @@ if(((depth - other.depth) < depthDifToDamage)
 	{
 		other.hitOrigin = 1;
 	}
+	audio_play_sound(snd_potbreak, 5, false);
 	instance_destroy();
 	
 }

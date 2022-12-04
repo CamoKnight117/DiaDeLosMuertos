@@ -12,7 +12,7 @@ function scr_movement() {
 		attackMechanics();
 		throwAttackMechanics();
 		
-		if(isAttacking == false || isThrowAttacking == false) //You can't initiate a jump if attacking
+		if(isAttacking == false && isThrowAttacking == false) //You can't initiate a jump if attacking
 		{		
 			walkMovement();
 			jumpAction();	

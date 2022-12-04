@@ -14,7 +14,6 @@ depthDifToDamage = 35;
 //audio_play_sound(snd_playerHit,4,false);
 
 animationCounter = 0;
-currentFrame = image_index;
 animationThreshold = 10;
 
 horizontal_dir = 0;

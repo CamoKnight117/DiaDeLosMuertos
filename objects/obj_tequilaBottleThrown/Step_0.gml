@@ -6,7 +6,7 @@ yVel += yGrav;
 if(animationCounter > animationThreshold)
 {
 	animationCounter = 0;
-	if(image_index == image_number)
+	if(image_index == image_number - 1)
 	{
 		image_index = 0;
 	}
@@ -22,6 +22,7 @@ height -= yVel;
 
 if(height <= 0)
 {
+	audio_play_sound(snd_potbreak, 5, false);
 	instance_destroy();
 }
 

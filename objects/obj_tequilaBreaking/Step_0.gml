@@ -3,9 +3,10 @@
 if(animationCounter > animationThreshold)
 {
 	animationCounter = 0;
-	if(image_index == image_number)
+	if(image_index == image_number - 1)
 	{
-		alarm[0] = 1;
+		
+		instance_destroy();
 	}
 	else
 	{

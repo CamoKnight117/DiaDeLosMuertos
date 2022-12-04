@@ -28,7 +28,7 @@ if((instance_exists(obj_enemy) == false || zombieCreationCounter >= zombieCreati
 		break;
 	}	
 	
-	zombie = instance_create_depth(zombieX,zombieY,0,obj_enemy);
+	zombie = instance_create_depth(zombieX,zombieY,0,obj_mariachiZombie);
 	zombie.following = true;
 }
 

@@ -143,6 +143,7 @@
     {"id":{"name":"rm_S7A","path":"rooms/rm_S7A/rm_S7A.yy",},"order":11,},
     {"id":{"name":"spr_SlideBG8","path":"sprites/spr_SlideBG8/spr_SlideBG8.yy",},"order":7,},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},"order":3,},
+    {"id":{"name":"spr_laCatrinaWalk","path":"sprites/spr_laCatrinaWalk/spr_laCatrinaWalk.yy",},"order":45,},
     {"id":{"name":"obj_urn","path":"objects/obj_urn/obj_urn.yy",},"order":10,},
     {"id":{"name":"spr_altarMessage","path":"sprites/spr_altarMessage/spr_altarMessage.yy",},"order":37,},
     {"id":{"name":"spr_tabReturn","path":"sprites/spr_tabReturn/spr_tabReturn.yy",},"order":36,},

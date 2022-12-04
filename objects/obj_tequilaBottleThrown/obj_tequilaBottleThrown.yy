@@ -9,7 +9,10 @@
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_tequilaCollisionMask",
+    "path": "sprites/spr_tequilaCollisionMask/spr_tequilaCollisionMask.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "obj_attackParent",

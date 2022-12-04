@@ -12,6 +12,7 @@ function scr_input() {
 	space = keyboard_check(vk_space) or gamepad_button_check_pressed(0, gp_face1);
 
 	basicAttack = keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(0, gp_face3);
+	throwAttack = keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(0, gp_face3);
 	
 
 	//Utility

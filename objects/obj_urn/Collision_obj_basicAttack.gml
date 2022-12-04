@@ -23,4 +23,5 @@ if(pickupNumber == 3)
 }
 
 audio_play_sound(snd_potbreak, 5, false);
+instance_create_depth(x,y,depth,obj_potBreaking);
 instance_destroy(self);

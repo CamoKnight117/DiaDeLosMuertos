@@ -98,21 +98,29 @@ image_index = frameIndex;
  {
 	if(frameCounter == 0)
 	{
-	 	attack = instance_create_depth(x,y,depth,obj_tequilaBottleThrown);
-		hasAttackObject = true;
-		if(image_xscale = 1)
+		if(object_is_ancestor(self.object_index, obj_enemy))
 		{
-		attack.x = x + attack.xOffset;
-		attack.y = y + attack.yOffset;
-		
+	 	throwAttack = instance_create_depth(x,y,depth,obj_tequilaBottleThrownEnemy);
 		}
 		else
 		{
-			attack.x = x - attack.sprite_width - attack.xOffset;
-			attack.y = y + attack.yOffset; 
+		throwAttack = instance_create_depth(x,y,depth,obj_tequilaBottleThrown);
+		global.holdingTequila = false;
+		throwAttack.xVel = 4.5;
+		}
+		hasAttackObject = true;
+		if(image_xscale = 1)
+		{
+		throwAttack.x = x + throwAttack.xOffset;
+		throwAttack.y = y + throwAttack.yOffset;		
+		}
+		else
+		{
+			throwAttack.x = x - throwAttack.xOffset;
+			throwAttack.y = y + throwAttack.yOffset; 
 		}					
-		attack.horizontal_dir = image_xscale;
-		attack.Owner = self;
+		throwAttack.horizontal_dir = image_xscale;
+		throwAttack.Owner = self;
 		isThrowAttacking = false;
 	}
  } 

@@ -57,6 +57,8 @@ randomY3 = irandom_range(yLowBound,yHighBound);
 
 
 
+if(room != rm_altar)
+{
 var emptyUrnsNum = 10;
 for(i = 0; i < emptyUrnsNum; i++)
 {
@@ -67,23 +69,40 @@ for(i = 0; i < emptyUrnsNum; i++)
 	instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);
 
 }
+}
+
+var numTequila = irandom_range(1,3);
+if(room == rm_altar)
+{
+	var numTequila = irandom_range(3,6);
+}
+for(i = 0; i < numTequila; i++)
+{
+		randomX1 = irandom_range(xLowBound,xHighBound);
+	randomY1 = irandom_range(yLowBound,yHighBound);
+
+	tequila = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_pickupParent);
+	tequila.pickupNumber = 0;
+	tequila.sprite_index = spr_tequilaBottle;
+}
 
 
 if(room == room0)
 {
+	global.holdingTequila = false;
 	pickupUrnOne = instance_create_layer(randomX1,randomY1,layer_get_id("Instances"),obj_urn);	
 	pickupUrnOne.pickupNumber = 1;
 	zombieCreationThreshold = 400;
 	
 }
-if(room == room1)
+else if(room == room1)
 {	
 	pickupUrnTwo = instance_create_layer(randomX2,randomY2,layer_get_id("Instances"),obj_urn);
 	pickupUrnTwo.pickupNumber = 2;
 	zombieCreationThreshold = 300;
 	global.pickupOne = true;
 }
-if(room == room2)
+else if(room == room2)
 {
 	pickupUrnThree = instance_create_layer(randomX3,randomY3,layer_get_id("Instances"),obj_urn);
 	pickupUrnThree.pickupNumber = 3;
@@ -91,11 +110,19 @@ if(room == room2)
 	global.pickupOne = true;
 	global.pickupTwo = true;
 }
+else if(room == rm_altar)
+{
+	global.pickupOne = true;
+	global.pickupTwo = true;
+	global.pickupThree = true;
+}
 
+pickupGUI0 = instance_create_layer(485,50,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI2 = instance_create_layer(460,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI3 = instance_create_layer(435,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 
+pickupGUI0.pickupNumber = 0;
 pickupGUI1.pickupNumber = 1;
 pickupGUI2.pickupNumber = 2;
 pickupGUI3.pickupNumber = 3;
@@ -110,15 +137,18 @@ arrowThree.visible = false;
 
 if(room == room0)
 {
-	rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObjectRoom0);
+	rightWall = instance_create_layer(515,120,layer_get_id("Instances"),obj_wallCollisionObjectRoom0);
 }
 if(room == room1)
 {
-	rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObjectRoom1);
+	rightWall = instance_create_layer(515,120,layer_get_id("Instances"),obj_wallCollisionObjectRoom1);
 }
 if(room == room2)
 {
-	rightWall = instance_create_layer(505,108,layer_get_id("Instances"),obj_wallCollisionObjectRoom2);
+	rightWall = instance_create_layer(515,120,layer_get_id("Instances"),obj_wallCollisionObjectRoom2);
 }
 
+if(room != rm_altar)
+{
 rightWall.active = false;
+}

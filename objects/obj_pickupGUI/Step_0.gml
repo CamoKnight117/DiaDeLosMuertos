@@ -1,7 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(pickupNumber == 1)
+if(pickupNumber == 0)
+{
+	if(global.holdingTequila)
+	{
+		sprite_index = spr_tequilaBottle;
+		image_alpha = 1;
+	}
+	else
+	{
+		sprite_index = spr_tequilaBottle;
+		image_alpha = 0.5;
+	}
+}
+else if(pickupNumber == 1)
 {
 	if(global.pickupOne)
 	{
@@ -14,7 +27,7 @@ if(pickupNumber == 1)
 		image_alpha = min(0.5, abs(sin(imageAlphaVar)));
 	}
 }
-if(pickupNumber == 2)
+else if(pickupNumber == 2)
 {
 	if(global.pickupTwo)
 	{
@@ -28,7 +41,7 @@ if(pickupNumber == 2)
 		image_alpha = min(0.5, abs(sin(imageAlphaVar)));
 	}
 }
-if(pickupNumber == 3)
+else if(pickupNumber == 3)
 {
 	if(global.pickupThree)
 	{
@@ -43,7 +56,7 @@ if(pickupNumber == 3)
 	}
 }
 
-
+if(pickupNumber != 0)
 		imageAlphaVar += 0.025;
 
 

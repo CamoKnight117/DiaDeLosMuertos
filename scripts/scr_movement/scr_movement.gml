@@ -61,7 +61,8 @@ function attackMechanics(){
 function throwAttackMechanics(){
 
 		if(throwAttack && grounded && isThrowAttacking != true 
-		&& isAttacking != true && isHit == false) //Check if isAttacking needs to be set to true
+		&& isAttacking != true && isHit == false 
+		&& (global.holdingTequila || self.object_index == obj_laCatrinaZombie)) //Check if isAttacking needs to be set to true
 		{
 			isThrowAttacking = true;
 			running = false;

@@ -45,13 +45,14 @@ if(isHit)
 	 
  }
  
- else if(isAttacking)
+ else if(isAttacking || isThrowAttacking)
  {
 	 sprite_index = attackingSprite;
 	 if(frameIndex > sprite_get_number(sprite_index) - 1)
 	 {
 		frameIndex = 0;
 		isAttacking = false;
+		isThrowAttacking = false;
 	 }
 	 maxFramesPerImage = attackAnimationArray[frameIndex];
  }
@@ -93,6 +94,28 @@ image_index = frameIndex;
 	}
  }
  
+  if(isThrowAttacking && frameIndex == basicAttackDamageStart)
+ {
+	if(frameCounter == 0)
+	{
+	 	attack = instance_create_depth(x,y,depth,obj_tequilaBottleThrown);
+		hasAttackObject = true;
+		if(image_xscale = 1)
+		{
+		attack.x = x + attack.xOffset;
+		attack.y = y + attack.yOffset;
+		
+		}
+		else
+		{
+			attack.x = x - attack.sprite_width - attack.xOffset;
+			attack.y = y + attack.yOffset; 
+		}					
+		attack.horizontal_dir = image_xscale;
+		attack.Owner = self;
+		isThrowAttacking = false;
+	}
+ } 
  
  frameCounter++;
 }

@@ -7,7 +7,7 @@
     "path": "sprites/spr_basicAttackHitbox/spr_basicAttackHitbox.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

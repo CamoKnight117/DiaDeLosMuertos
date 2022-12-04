@@ -8,6 +8,8 @@
 // Inherit the parent event
 event_inherited();
 
+attackDelay = 200;
+
 idleSprite = spr_laCatrinaIdle;
 runningSprite = spr_laCatrinaWalk;
 attackingSprite = spr_laCatrinaAttack;

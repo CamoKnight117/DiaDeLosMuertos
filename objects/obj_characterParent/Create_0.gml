@@ -8,6 +8,7 @@ up = 0;
 down = 0;
 sprint = 0;
 basicAttack = 0;
+throwAttack = 0;
 
 
 
@@ -19,6 +20,7 @@ hitOrigin = 0; //Which side were you hit from? -1 = left, 1 =
 knockbackVelocity = 0;
 
 isAttacking = false; //Is the player attacking?
+isThrowAttacking = false;
 idle = true;
 running = false;
 sprinting = false;

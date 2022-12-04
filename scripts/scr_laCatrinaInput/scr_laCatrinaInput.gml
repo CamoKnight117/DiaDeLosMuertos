@@ -6,6 +6,7 @@ function scr_laCatrinaInput(){
 	right = 0;
 	up = 0;
 	down = 0;
+	throwAttack = false;
 	basicAttack = false;
 	inputLagCounter--;
 	
@@ -14,7 +15,7 @@ function scr_laCatrinaInput(){
 		
 	}
 	
-	if(isAttacking == false && attackCountdown > 0)
+	if(isThrowAttacking == false && attackCountdown > 0)
 	{
 	attackCountdown--;
 	}
@@ -36,7 +37,8 @@ function scr_laCatrinaInput(){
 		playerY = obj_character.groundY;
 		
 		
-		if(x - playerX > 20 || x - playerX < -20 || y - playerY> 20 || y - playerY < -20)
+		if(x - playerX > basicAttackDistance - 10 || x - playerX < -1 * basicAttackDistance + 10
+		|| y - playerY> basicAttackVertDist - 10 || y - playerY < -1 * basicAttackVertDist + 10)
 		{
 			if(following)
 			{
@@ -92,9 +94,10 @@ function scr_laCatrinaInput(){
 		
 					
 		if(abs(x - playerX) < basicAttackDistance && 
-		abs(y - playerY) < basicAttackVertDist && attackCountdown <= 0)
+		abs(y - playerY) < basicAttackVertDist && attackCountdown <= 0
+		&& -sign(x - playerX) == sign(image_xscale))
 			{
-				basicAttack = true;
+				throwAttack = true;
 				attackCountdown = attackDelay/4 + random(attackDelay*1.5);
 			}
 			

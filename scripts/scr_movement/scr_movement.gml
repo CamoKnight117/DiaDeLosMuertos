@@ -9,9 +9,10 @@ function scr_movement() {
 	}
 	else{	//Otherwise, worry about movement and attacks
 		
-		attackMechanics();		
+		attackMechanics();
+		throwAttackMechanics();
 		
-		if(isAttacking == false) //You can't initiate a jump if attacking
+		if(isAttacking == false || isThrowAttacking == false) //You can't initiate a jump if attacking
 		{		
 			walkMovement();
 			jumpAction();	
@@ -44,9 +45,25 @@ function stunMechanics(){
 
 function attackMechanics(){
 
-		if(basicAttack && grounded && isAttacking != true) //Check if isAttacking needs to be set to true
+		if(basicAttack && grounded && isAttacking != true && isHit == false && isThrowAttacking != true) //Check if isAttacking needs to be set to true
 		{
 			isAttacking = true;
+			running = false;
+			sprinting = false;
+			idle = false;
+			beginAnimation = true;	
+		}
+		
+		
+		//More attack mechanics done in the animation script
+}
+
+function throwAttackMechanics(){
+
+		if(throwAttack && grounded && isThrowAttacking != true 
+		&& isAttacking != true && isHit == false) //Check if isAttacking needs to be set to true
+		{
+			isThrowAttacking = true;
 			running = false;
 			sprinting = false;
 			idle = false;

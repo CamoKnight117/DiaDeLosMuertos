@@ -1,1 +1,1 @@
-audio_stop_sound(snd_battleTrack);
+audio_stop_sound(snd_battleTrackTrimmed);

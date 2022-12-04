@@ -1,6 +1,6 @@
 if(((depth - other.depth) < depthDifToDamage) 
 && Owner != other && other.isHit == false
-&& Owner.object_index != other.object_index 
+&& !object_is_ancestor(other.object_index, obj_enemy)
 && Owner.isHit == false)
 {
 	other.isHit = true;

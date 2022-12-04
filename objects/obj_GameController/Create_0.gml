@@ -4,6 +4,9 @@
 zombieCreationCounter = 0;
 zombieCreationThreshold = 180;
 
+laCatrinaCreationCounter = 0;
+laCatrinaCreationThreshold = 800;
+
 global.walkBorderLeft = 0;
 global.walkBorderRight = 512;
 global.walkBorderBottom = 334;

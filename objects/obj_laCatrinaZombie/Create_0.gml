@@ -12,7 +12,7 @@ idleSprite = spr_laCatrinaIdle;
 runningSprite = spr_laCatrinaWalk;
 attackingSprite = spr_laCatrinaAttack;
 sprintingSprite = spr_zombieMariachi;
-hitSprite = spr_zombieHit;
+hitSprite = spr_laCatrinaHit;
 
 walkAnimationFrameCounts = [6,6,6,6,6,6,6,6,6];
 basicAttackFrameCounts = [7,8,9,6,7];

@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_laCatrinaInput(){
-function scr_enemyInput(){
 	space = 0;
 	left = 0;
 	right = 0;
@@ -20,7 +19,7 @@ function scr_enemyInput(){
 	attackCountdown--;
 	}
 	
-	var basicAttackDistance = 30;
+	var basicAttackDistance = 200;
 	var basicAttackVertDist = 35;
 	
 	if(awake == false)
@@ -116,5 +115,4 @@ function scr_enemyInput(){
 	prevDown = down;
 	prevLeft = left;
 	prevRight = right;
-}
 }

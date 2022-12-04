@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "spr_tequilaBottleThrown",
-  "spriteId": null,
+  "name": "obj_tequilaBottleThrown",
+  "spriteId": {
+    "name": "spr_tequilaSpin",
+    "path": "sprites/spr_tequilaSpin/spr_tequilaSpin.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

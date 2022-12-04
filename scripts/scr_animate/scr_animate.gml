@@ -38,6 +38,10 @@ if(isHit)
 		 audio_play_sound(snd_zombie ,5, false);
 	 }
 	 
+	 if (hitSprite = spr_laCatrinaHit) and !audio_is_playing(snd_zombie)
+	 {
+		 audio_play_sound(snd_zombie ,5, false);
+	 }
 	 
  }
  

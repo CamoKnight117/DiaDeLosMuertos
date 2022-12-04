@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 followLag = 60;
+HP = 20;
 
 isOnScreen = false;
 

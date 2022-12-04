@@ -1,7 +1,7 @@
 depth = -1*y;
 image_speed = 0;
 
-damage = 10;
+damage = 15;
 stunLength = 30;
 knockbackPower = 5;
 Owner = 0;

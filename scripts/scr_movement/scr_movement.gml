@@ -38,6 +38,14 @@ function stunMechanics(){
 			if(knockbackVelocity > 0)
 			{
 			groundX -= hitOrigin*knockbackVelocity;
+				if(groundX > global.walkBorderRight)
+				{
+					groundX = global.walkBorderRight;
+				}
+				else if(groundX < global.walkBorderLeft)
+				{
+					groundX = global.walkBorderLeft;
+				}
 			knockbackVelocity--;
 			}
 	}

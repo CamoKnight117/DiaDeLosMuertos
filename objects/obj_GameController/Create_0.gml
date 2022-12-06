@@ -7,6 +7,7 @@ zombieCreationThreshold = 180;
 laCatrinaCreationCounter = 0;
 laCatrinaCreationThreshold = 1000;
 
+global.gameCompleted = false;
 global.walkBorderLeft = 0;
 global.walkBorderRight = 512;
 global.walkBorderBottom = 334;
@@ -55,7 +56,34 @@ randomY2 = irandom_range(yLowBound,yHighBound);
 randomX3 = irandom_range(xLowBound,xHighBound);
 randomY3 = irandom_range(yLowBound,yHighBound);
 
-
+if(room == z)
+{
+	global.walkBorderRight = 1536;
+	xHighBound = 1536;
+	zombieXLowBound2 = 1536;
+	zombieXHighBound2 = 1636;	
+	zombieXHighBound3 = 1636;	
+	zombieCreationThreshold = 150;
+	laCatrinaCreationThreshold = 400;	
+	particles = part_system_create();
+	partTypeConfetti = part_type_create();
+	part_type_sprite(partTypeConfetti, spr_confetti, false, false, true);
+	part_type_orientation(partTypeConfetti, 0, 360, 0, 45, 0);
+	part_type_gravity(partTypeConfetti, 0.0001, 270);
+	part_type_size(partTypeConfetti, 0.1, 0.2, 0, 0);
+	part_type_life(partTypeConfetti, 30, 250);
+	part_type_direction(partTypeConfetti, 240, 300, 0, 30);
+	part_type_speed(partTypeConfetti, 2,3,0,0);
+	partSystemActive = true;
+}
+else
+{
+	global.walkBorderRight = 512;
+	xHighBound = 512;
+	zombieXLowBound2 = 612;
+	zombieXHighBound2 = 530;
+	zombieXHighBound3 = 612;
+}
 
 if(room != rm_altar)
 {
@@ -74,7 +102,14 @@ for(i = 0; i < emptyUrnsNum; i++)
 var numTequila = irandom_range(1,3);
 if(room == rm_altar)
 {
-	var numTequila = irandom_range(3,6);
+	var numTequila = 0;
+	global.gameCompleted = true;
+}
+else if(room == z)
+{
+	numTequila = irandom_range(10,18);
+	view_visible[1] = true;
+	view_visible[0] = false;
 }
 for(i = 0; i < numTequila; i++)
 {
@@ -116,6 +151,12 @@ else if(room == rm_altar)
 	global.pickupTwo = true;
 	global.pickupThree = true;
 }
+else if(room == rm_altar)
+{
+	global.pickupOne = true;
+	global.pickupTwo = true;
+	global.pickupThree = true;
+}
 
 pickupGUI0 = instance_create_layer(485,50,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
@@ -148,7 +189,7 @@ if(room == room2)
 	rightWall = instance_create_layer(515,120,layer_get_id("Instances"),obj_wallCollisionObjectRoom2);
 }
 
-if(room != rm_altar)
+if(room != rm_altar && room != z)
 {
 rightWall.active = false;
 }

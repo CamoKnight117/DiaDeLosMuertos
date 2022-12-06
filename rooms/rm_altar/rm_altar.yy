@@ -39,6 +39,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3090C154","properties":[],"isDnd":false,"objectId":{"name":"obj_mariachiZombie","path":"objects/obj_mariachiZombie/obj_mariachiZombie.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43033A83","properties":[],"isDnd":false,"objectId":{"name":"obj_laCatrinaZombie","path":"objects/obj_laCatrinaZombie/obj_laCatrinaZombie.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":736.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EB6F0A4","properties":[],"isDnd":false,"objectId":{"name":"obj_healthBar","path":"objects/obj_healthBar/obj_healthBar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":37.0,"y":17.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_616820D3","properties":[],"isDnd":false,"objectId":{"name":"obj_help4","path":"objects/obj_help4/obj_help4.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.53125,"scaleY":0.5416667,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-32.0,"y":384.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BackgroundObjects","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_182AA758_1","properties":[],"isDnd":false,"objectId":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":192.0,},
@@ -70,6 +71,7 @@
     {"name":"inst_3090C154","path":"rooms/rm_altar/rm_altar.yy",},
     {"name":"inst_43033A83","path":"rooms/rm_altar/rm_altar.yy",},
     {"name":"inst_5EB6F0A4","path":"rooms/rm_altar/rm_altar.yy",},
+    {"name":"inst_616820D3","path":"rooms/rm_altar/rm_altar.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

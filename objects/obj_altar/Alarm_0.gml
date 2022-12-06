@@ -5,7 +5,7 @@
 part_type_destroy(partTypeConfetti);
 part_system_destroy(particles);
 
-room_goto(rm_YouWin);
+room_goto(rm_EndS1A);
 
 
 

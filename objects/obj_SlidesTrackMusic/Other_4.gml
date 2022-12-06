@@ -1,1 +1,1 @@
-audio_play_sound(snd_slidesTrack,100,true)
+audio_play_sound(snd_slidesTrack,100,true);

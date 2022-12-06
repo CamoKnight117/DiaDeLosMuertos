@@ -164,6 +164,7 @@
     {"id":{"name":"spr_S4A","path":"sprites/spr_S4A/spr_S4A.yy",},"order":9,},
     {"id":{"name":"obj_wallCollisionObjectRoom1","path":"objects/obj_wallCollisionObjectRoom1/obj_wallCollisionObjectRoom1.yy",},"order":23,},
     {"id":{"name":"rm_EndS6M","path":"rooms/rm_EndS6M/rm_EndS6M.yy",},"order":20,},
+    {"id":{"name":"Sprite84","path":"sprites/Sprite84/Sprite84.yy",},"order":51,},
     {"id":{"name":"rm_S6A","path":"rooms/rm_S6A/rm_S6A.yy",},"order":10,},
     {"id":{"name":"snd_controlsTrack","path":"sounds/snd_controlsTrack/snd_controlsTrack.yy",},"order":10,},
     {"id":{"name":"spr_S7M","path":"sprites/spr_S7M/spr_S7M.yy",},"order":14,},

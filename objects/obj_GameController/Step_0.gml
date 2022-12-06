@@ -1,6 +1,6 @@
 zombieCreationCounter++;
 
-if(room == room1 || room == room2)
+if(room == room1 || room == room2 || room == z)
 {
 laCatrinaCreationCounter++
 

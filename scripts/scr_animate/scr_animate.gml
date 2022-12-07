@@ -1,4 +1,4 @@
-function scr_animate(attackAnimationArray, walkAnimationArray){
+function scr_animate(){
 	
 	if(beginAnimation)
 	{
@@ -27,7 +27,6 @@ function scr_animate(attackAnimationArray, walkAnimationArray){
 		frameIndex = 0;	 
 	 maxFramesPerImage = walkAnimationArray[frameIndex];
  }
-
 if(isHit)
  {
 	 sprite_index = hitSprite;
@@ -44,26 +43,58 @@ if(isHit)
 	 }
 	 
  }
- 
  else if(isAttacking || isThrowAttacking)
  {
 	 sprite_index = attackingSprite;
-	 if(frameIndex > sprite_get_number(sprite_index) - 1)
+	 if(frameIndex >= sprite_get_number(sprite_index) - 1)
 	 {
-		frameIndex = 0;
 		isAttacking = false;
 		isThrowAttacking = false;
 	 }
 	 maxFramesPerImage = attackAnimationArray[frameIndex];
  }
+ else if(isChargeAttacking && !isStrumming)
+ {
+	 if(strum && charged)
+	 {
+	 isStrumming = true;
+	 isChargeAttacking = true;
+	 sprite_index = strumSprite;
+	 frameIndex = 0;
+	 }
+	 else
+	 {
+	 sprite_index = chargeSprite;
+	 }
+	 if(frameIndex >= sprite_get_number(sprite_index) - 1 && (sprite_index != strumSprite))
+	 {
+		frameIndex = 3;
+		frameCounter = 0;
+		charged = true;
+	 }
+	 maxFramesPerImage = chargeAnimationArray[frameIndex];
+ }
+ else if(isStrumming)
+ {
+	 sprite_index = strumSprite;
+	 if(frameIndex >= sprite_get_number(sprite_index) - 1)
+	 {
+		isAttacking = false;
+		isThrowAttacking = false;
+		isStrumming = false;
+		isChargeAttacking = false;
+		charged = false;
+	 }
+	 maxFramesPerImage = strumAnimationArray[frameIndex];
+ }
  
  
- 
+
 if(frameCounter >= maxFramesPerImage)
 {
 	frameCounter = 0;
 	
-	if(frameIndex <= sprite_get_number(sprite_index) - 1)
+	if(frameIndex < sprite_get_number(sprite_index) - 1)
 	{
 		frameIndex++
 	}
@@ -124,6 +155,17 @@ image_index = frameIndex;
 		isThrowAttacking = false;
 	}
  } 
+ 
+  if(isStrumming &&   (frameIndex == strumAttackDamageStart 
+  ||frameIndex == strumAttackSecondDamage ||frameIndex == strumAttackThirdDamage) )
+ {
+	if(frameCounter == 0)
+	{
+	 	attack = instance_create_depth(x,y,depth,obj_chargedAttack);
+		hasAttackObject = true;			
+		attack.Owner = self;
+	}
+ }
  
  frameCounter++;
 }

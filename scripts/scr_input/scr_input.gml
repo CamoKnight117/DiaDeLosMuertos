@@ -13,7 +13,8 @@ function scr_input() {
 
 	basicAttack = keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(0, gp_face3);
 	throwAttack = keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(0, gp_shoulderrb);
-	
+	chargeAttack = keyboard_check_pressed(ord("L")) //or gamepad_button_check_pressed(0, gp_shoulderrb);
+	strum = keyboard_check_released(ord("L"));
 
 	//Utility
 	if keyboard_check_pressed(vk_escape) game_end();

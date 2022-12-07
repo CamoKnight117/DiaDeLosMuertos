@@ -21,3 +21,5 @@ xVel = 3;
 yVel = -1;
 yGrav = 0.05;
 height = 40;
+
+sound = snd_potbreak;

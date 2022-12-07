@@ -29,12 +29,17 @@ attackingCounter = 0;
 basicAttackObject = obj_basicAttack;
 attack = 0;
 
+isChargeAttacking = false;
+chargeAttack = false;
+isStrumming = false;
+strum = false;
+
 //Sprite/Animation variables
 animationFPS = 60;
 frameIndex = 0;
 frameCounter = 0;
 
-walkAnimationFrameCounts = [6,6,6,6,6,6,6,6,6,6];
+walkAnimationArray = [6,6,6,6,6,6,6,6,6,6];
 basicAttackFrameCounts = [60];
 basicAttackDamageStart = 0;
 hasAttackObject = false;

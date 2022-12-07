@@ -5,14 +5,24 @@ function scr_movement() {
 	
 	if(isHit) //If you're hit, don't move, and decrement stun variables as necessary
 	{
+			isAttacking = false;
+			basicAttack = false;
+			isThrowAttacking = false
+			throwAttack = false
+			isChargeAttacking = false;
+			isStrumming = false;
+			strum = false
+			chargeAttack = false;
+			charged = false;
 		stunMechanics();
 	}
 	else{	//Otherwise, worry about movement and attacks
 		
 		attackMechanics();
 		throwAttackMechanics();
+		chargeAttackMechanics();
 		
-		if(isAttacking == false && isThrowAttacking == false) //You can't initiate a jump if attacking
+		if(isAttacking == false && isThrowAttacking == false && isChargeAttacking == false) //You can't initiate a jump if attacking
 		{		
 			walkMovement();
 			jumpAction();	
@@ -28,7 +38,7 @@ function scr_movement() {
 
 function stunMechanics(){
 			if(stunCounter > 0)
-	{
+	{			
 			stunCounter--;
 			if(stunCounter == 0)
 			{
@@ -53,13 +63,35 @@ function stunMechanics(){
 
 function attackMechanics(){
 
-		if(basicAttack && grounded && isAttacking != true && isHit == false && isThrowAttacking != true) //Check if isAttacking needs to be set to true
+		if(basicAttack && grounded && isAttacking == false && isHit == false 
+		&& isThrowAttacking == false && isChargeAttacking == false) //Check if isAttacking needs to be set to true
 		{
 			isAttacking = true;
 			running = false;
 			sprinting = false;
 			idle = false;
 			beginAnimation = true;	
+		}
+		
+		
+		//More attack mechanics done in the animation script
+}
+
+function chargeAttackMechanics(){
+
+		if(chargeAttack && grounded && isAttacking == false && isChargeAttacking == false
+		&& isHit == false && isThrowAttacking == false) //Check if isChargeAttacking needs to be set to true
+		{
+			isChargeAttacking = true;
+			running = false;
+			sprinting = false;
+			idle = false;
+			beginAnimation = true;	
+		}
+		if(strum && isChargeAttacking && !charged)
+		{
+			isChargeAttacking = false;
+			idle = true;			
 		}
 		
 		

@@ -8,5 +8,5 @@ if(HP <= 0)
 
 scr_laCatrinaInput();
 scr_movement();
-scr_animate(basicAttackFrameCounts, walkAnimationFrameCounts);
+scr_animate();
 

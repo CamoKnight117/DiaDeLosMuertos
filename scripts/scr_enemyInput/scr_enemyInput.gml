@@ -5,6 +5,7 @@ function scr_enemyInput(){
 	up = 0;
 	down = 0;
 	basicAttack = false;
+	chargeAttack = false;
 	inputLagCounter--;
 	
 	if(isHit) 

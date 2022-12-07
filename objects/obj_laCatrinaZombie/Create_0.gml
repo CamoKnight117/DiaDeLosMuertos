@@ -20,5 +20,5 @@ attackingSprite = spr_laCatrinaAttack;
 sprintingSprite = spr_zombieMariachi;
 hitSprite = spr_laCatrinaHit;
 
-walkAnimationFrameCounts = [6,6,6,6,6,6,6,6,6];
-basicAttackFrameCounts = [7,8,9,6,7];
+walkAnimationArray = [6,6,6,6,6,6,6,6,6];
+attackAnimationArray = [7,8,9,6,7];

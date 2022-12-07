@@ -3,7 +3,8 @@
 
 if(instance_exists(obj_character))
 {
-	image_xscale = obj_character.HP/obj_character.max_HP;
+	image_xscale = obj_character.HP/obj_character.max_HP; 
 }
 
-
+rightCap.x = x + sprite_width;
+rightCap.y = y;

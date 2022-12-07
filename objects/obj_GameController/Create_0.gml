@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+display_set_gui_size(512,384);
 zombieCreationCounter = 0;
 zombieCreationThreshold = 180;
 
@@ -158,7 +158,7 @@ else if(room == rm_altar)
 	global.pickupThree = true;
 }
 
-pickupGUI0 = instance_create_layer(485,50,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI0 = instance_create_layer(485,60,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI2 = instance_create_layer(460,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI3 = instance_create_layer(435,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
@@ -175,6 +175,8 @@ arrowOne.visible = false;
 arrowTwo.visible = false;
 arrowThree.visible = false;
 
+//Health bar creation
+hpBar = instance_create_layer(0,10,layer_get_id("GUI_Layer"),obj_healthBarBackground);
 
 if(room == room0)
 {

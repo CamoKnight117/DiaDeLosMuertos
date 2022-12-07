@@ -34,10 +34,10 @@ function scr_laCatrinaInput(){
 	attackCountdown--;
 	}
 	
-	var basicAttackDistance = 270;
+	var basicAttackDistance = 190;
 	var basicAttackVertDist = 35;
 	var runAwayDist = 125;
-	var runToDist = 200;
+	var runToDist = 190;
 	var distFromBorder = 30;
 	
 	if(awake == false)

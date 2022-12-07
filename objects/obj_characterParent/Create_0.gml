@@ -53,9 +53,13 @@ HP = 100;
 max_HP = HP;
 stunCounter = 0;
 
-//Movement speeds for scr_movement
-horRunSpeed = 1.5;
-verRunSpeed = .75;
+//Movement speeds for scr_movement OLD
+//horRunSpeed = 1.5;
+//verRunSpeed = .75;
+
+//Movement speeds for scr_movement NEW NO SPRINT
+horRunSpeed = 2.25;
+verRunSpeed = 1.5;
 sprintMultiplier = 2; //must be >= 1
 
 //jumpVariables

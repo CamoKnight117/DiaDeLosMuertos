@@ -4,7 +4,7 @@
   "name": "snd_item",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.13,
   "preload": false,
   "bitRate": 512,
   "sampleRate": 44100,

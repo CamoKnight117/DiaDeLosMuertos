@@ -4,7 +4,7 @@
   "name": "snd_zombie",
   "conversionMode": 0,
   "compression": 3,
-  "volume": 1.0,
+  "volume": 0.52,
   "preload": false,
   "bitRate": 512,
   "sampleRate": 44100,

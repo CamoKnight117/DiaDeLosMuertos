@@ -77,6 +77,12 @@ if(isHit)
  else if(isStrumming)
  {
 	 sprite_index = strumSprite;
+	 
+	 if(frameIndex == 1 && frameCounter == 1)
+	 {		 
+	 audio_play_sound(snd_guitarExplosion, 5, false, 5.0);
+	 }
+	 
 	 if(frameIndex >= sprite_get_number(sprite_index) - 1)
 	 {
 		isAttacking = false;

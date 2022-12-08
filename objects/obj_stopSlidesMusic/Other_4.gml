@@ -1,1 +1,1 @@
-audio_stop_sound(snd_slidesTrack);
+//audio_stop_sound(snd_slidesTrack);

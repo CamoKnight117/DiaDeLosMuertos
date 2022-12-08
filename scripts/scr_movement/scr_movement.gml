@@ -22,7 +22,7 @@ function scr_movement() {
 		throwAttackMechanics();
 		chargeAttackMechanics();
 		
-		if(isAttacking == false && isThrowAttacking == false && isChargeAttacking == false) //You can't initiate a jump if attacking
+		if(isAttacking == false && isThrowAttacking == false && isChargeAttacking == false && isStrumming == false) //You can't initiate a jump if attacking
 		{		
 			walkMovement();
 			jumpAction();	
@@ -64,7 +64,7 @@ function stunMechanics(){
 function attackMechanics(){
 
 		if(basicAttack && grounded && isAttacking == false && isHit == false 
-		&& isThrowAttacking == false && isChargeAttacking == false) //Check if isAttacking needs to be set to true
+		&& isThrowAttacking == false && isChargeAttacking == false && isStrumming == false) //Check if isAttacking needs to be set to true
 		{
 			isAttacking = true;
 			running = false;
@@ -80,7 +80,7 @@ function attackMechanics(){
 function chargeAttackMechanics(){
 
 		if(chargeAttack && grounded && isAttacking == false && isChargeAttacking == false
-		&& isHit == false && isThrowAttacking == false) //Check if isChargeAttacking needs to be set to true
+		&& isHit == false && isThrowAttacking == false && isStrumming == false) //Check if isChargeAttacking needs to be set to true
 		{
 			isChargeAttacking = true;
 			running = false;
@@ -101,7 +101,7 @@ function chargeAttackMechanics(){
 function throwAttackMechanics(){
 
 		if(throwAttack && grounded && isThrowAttacking != true 
-		&& isAttacking != true && isHit == false 
+		&& isAttacking != true && isHit == false  && isChargeAttacking == false && isStrumming == false
 		&& (global.holdingTequila || self.object_index == obj_laCatrinaZombie)) //Check if isAttacking needs to be set to true
 		{
 			isThrowAttacking = true;

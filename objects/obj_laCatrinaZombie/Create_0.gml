@@ -19,6 +19,7 @@ runningSprite = spr_laCatrinaWalk;
 attackingSprite = spr_laCatrinaAttack;
 sprintingSprite = spr_zombieMariachi;
 hitSprite = spr_laCatrinaHit;
+deadSprite = spr_laCatrinaDead;
 
 walkAnimationArray = [6,6,6,6,6,6,6,6,6];
 attackAnimationArray = [7,8,9,6,7];

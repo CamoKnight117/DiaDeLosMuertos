@@ -22,4 +22,6 @@ strumAttackThirdDamage = 7;
 charged = false;
 isStrumming = false;
 
+deathDisplayLength2 = 120;
+
 

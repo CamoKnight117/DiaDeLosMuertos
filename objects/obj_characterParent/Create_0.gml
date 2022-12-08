@@ -19,6 +19,8 @@ isHit = false; //Has the player been hit by an enemy?
 hitOrigin = 0; //Which side were you hit from? -1 = left, 1 = 
 knockbackVelocity = 0;
 
+dead = false;
+
 isAttacking = false; //Is the player attacking?
 isThrowAttacking = false;
 idle = true;
@@ -49,6 +51,7 @@ attackingSprite = spr_playerIdle;
 runningSprite = spr_playerWalkingSpritesheet;
 sprintingSprite = spr_playerWalkingSpritesheet;
 hitSprite = spr_enemyHit;
+deadSprite = spr_zombieDead;
 image_speed = 0;
 beginAnimation = false; //Set true when an animation is just started!
 
@@ -57,6 +60,9 @@ beginAnimation = false; //Set true when an animation is just started!
 HP = 100;
 max_HP = HP;
 stunCounter = 0;
+deathDisplayLength1 = 20;
+deathDisplayLength2 = 60;
+deathCounter = 0;
 
 //Movement speeds for scr_movement OLD
 //horRunSpeed = 1.5;

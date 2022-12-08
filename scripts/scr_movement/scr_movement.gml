@@ -3,7 +3,7 @@ function scr_movement() {
 	
 	beginAnimation = false;
 	
-	if(isHit) //If you're hit, don't move, and decrement stun variables as necessary
+	if(isHit || dead) //If you're hit, don't move, and decrement stun variables as necessary
 	{
 			isAttacking = false;
 			basicAttack = false;

@@ -223,6 +223,7 @@
     {"id":{"name":"rm_S3A2","path":"rooms/rm_S3A2/rm_S3A2.yy",},"order":6,},
     {"id":{"name":"spr_SlideBG5","path":"sprites/spr_SlideBG5/spr_SlideBG5.yy",},"order":4,},
     {"id":{"name":"rm_S2M","path":"rooms/rm_S2M/rm_S2M.yy",},"order":3,},
+    {"id":{"name":"snd_altarWin","path":"sounds/snd_altarWin/snd_altarWin.yy",},"order":20,},
     {"id":{"name":"spr_mariachiManCharge","path":"sprites/spr_mariachiManCharge/spr_mariachiManCharge.yy",},"order":54,},
     {"id":{"name":"room1","path":"rooms/room1/room1.yy",},"order":7,},
     {"id":{"name":"obj_healthBar","path":"objects/obj_healthBar/obj_healthBar.yy",},"order":11,},

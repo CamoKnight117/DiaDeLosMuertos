@@ -1,4 +1,4 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 
 switch(hits)
@@ -17,7 +17,7 @@ switch(hits)
 	default:
 	image_index = 3;
 	break;
-}
+}                    
 
 if(partSystemActive)
 {
@@ -27,6 +27,7 @@ if(partSystemActive)
 	yHighBound = 0;
 	randX = random_range(xLowBound, xHighBound);
 	randY = random_range(yLowBound, yHighBound);
+	audio_play_sound(snd_bottleBreak, 5, false);
 	part_particles_create(particles, randX, randY, partTypeConfetti, 3);
 }
 

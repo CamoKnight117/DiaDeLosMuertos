@@ -11,7 +11,7 @@ HP = 18;
 
 isOnScreen = false;
 
-attackDelay = 200;
+attackDelay = 300;
 runningAway = false;
 
 idleSprite = spr_laCatrinaIdle;

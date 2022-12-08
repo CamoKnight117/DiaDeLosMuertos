@@ -56,6 +56,7 @@
     {"id":{"name":"spr_tabControls","path":"sprites/spr_tabControls/spr_tabControls.yy",},"order":35,},
     {"id":{"name":"spr_EndS4A","path":"sprites/spr_EndS4A/spr_EndS4A.yy",},"order":20,},
     {"id":{"name":"snd_battleTrack","path":"sounds/snd_battleTrack/snd_battleTrack.yy",},"order":12,},
+    {"id":{"name":"obj_placeholderGUI","path":"objects/obj_placeholderGUI/obj_placeholderGUI.yy",},"order":40,},
     {"id":{"name":"scr_enemyInput","path":"scripts/scr_enemyInput/scr_enemyInput.yy",},"order":4,},
     {"id":{"name":"obj_S7A","path":"objects/obj_S7A/obj_S7A.yy",},"order":11,},
     {"id":{"name":"spr_HelpSprite1","path":"sprites/spr_HelpSprite1/spr_HelpSprite1.yy",},"order":0,},

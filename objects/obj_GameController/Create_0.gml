@@ -158,6 +158,7 @@ else if(room == rm_altar)
 	global.pickupThree = true;
 }
 
+GUIframe = instance_create_layer(8,42,layer_get_id("GUI_Layer"),obj_placeholderGUI);
 pickupGUI0 = instance_create_layer(105,85,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI1 = instance_create_layer(30,85,layer_get_id("GUI_Layer"),obj_pickupGUI);
 pickupGUI2 = instance_create_layer(55,85,layer_get_id("GUI_Layer"),obj_pickupGUI);
@@ -176,7 +177,7 @@ arrowTwo.visible = false;
 arrowThree.visible = false;
 
 //Health bar creation
-hpBar = instance_create_layer(0,10,layer_get_id("GUI_Layer"),obj_healthBarBackground);
+hpBar = instance_create_layer(-10,2,layer_get_id("GUI_Layer"),obj_healthBarBackground);
 helpMessage = instance_create_layer(260,10,layer_get_id("GUI_Layer"),obj_helpMessageGUI);
 
 if(room == room0)

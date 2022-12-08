@@ -6,6 +6,7 @@
     {"id":{"name":"spr_tequilaSpin","path":"sprites/spr_tequilaSpin/spr_tequilaSpin.yy",},"order":40,},
     {"id":{"name":"spr_tequilaBottle","path":"sprites/spr_tequilaBottle/spr_tequilaBottle.yy",},"order":39,},
     {"id":{"name":"obj_TitleTrackMusic","path":"objects/obj_TitleTrackMusic/obj_TitleTrackMusic.yy",},"order":0,},
+    {"id":{"name":"obj_exitGame","path":"objects/obj_exitGame/obj_exitGame.yy",},"order":39,},
     {"id":{"name":"spr_zombieWalk","path":"sprites/spr_zombieWalk/spr_zombieWalk.yy",},"order":28,},
     {"id":{"name":"obj_wallCollisionObjectRoom0","path":"objects/obj_wallCollisionObjectRoom0/obj_wallCollisionObjectRoom0.yy",},"order":24,},
     {"id":{"name":"snd_guitar","path":"sounds/snd_guitar/snd_guitar.yy",},"order":16,},

@@ -158,10 +158,10 @@ else if(room == rm_altar)
 	global.pickupThree = true;
 }
 
-pickupGUI0 = instance_create_layer(485,60,layer_get_id("GUI_Layer"),obj_pickupGUI);
-pickupGUI1 = instance_create_layer(485,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
-pickupGUI2 = instance_create_layer(460,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
-pickupGUI3 = instance_create_layer(435,25,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI0 = instance_create_layer(105,85,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI1 = instance_create_layer(30,85,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI2 = instance_create_layer(55,85,layer_get_id("GUI_Layer"),obj_pickupGUI);
+pickupGUI3 = instance_create_layer(80,85,layer_get_id("GUI_Layer"),obj_pickupGUI);
 
 pickupGUI0.pickupNumber = 0;
 pickupGUI1.pickupNumber = 1;
@@ -177,18 +177,35 @@ arrowThree.visible = false;
 
 //Health bar creation
 hpBar = instance_create_layer(0,10,layer_get_id("GUI_Layer"),obj_healthBarBackground);
+helpMessage = instance_create_layer(260,10,layer_get_id("GUI_Layer"),obj_helpMessageGUI);
 
 if(room == room0)
 {
 	rightWall = instance_create_layer(515,120,layer_get_id("Instances"),obj_wallCollisionObjectRoom0);
+	helpMessage.sprite1 = spr_motherMessage1;
+	helpMessage.sprite2 = spr_helpMessage1;
 }
-if(room == room1)
+else if(room == room1)
 {
 	rightWall = instance_create_layer(515,120,layer_get_id("Instances"),obj_wallCollisionObjectRoom1);
+	helpMessage.sprite1 = spr_motherMessage2;
+	helpMessage.sprite2 = spr_helpMessage2;
 }
-if(room == room2)
+else if(room == room2)
 {
 	rightWall = instance_create_layer(515,120,layer_get_id("Instances"),obj_wallCollisionObjectRoom2);
+	helpMessage.sprite1 = spr_motherMessage3;
+	helpMessage.sprite2 = spr_helpMessage3;
+}
+else if(room == rm_altar)
+{
+	helpMessage.sprite1 = spr_motherMessage4;
+	helpMessage.sprite2 = spr_motherMessage4;
+}
+else if(room == z)
+{
+	helpMessage.sprite1 = spr_motherMessage5;
+	helpMessage.sprite2 = spr_motherMessage5;
 }
 
 if(room != rm_altar && room != z)

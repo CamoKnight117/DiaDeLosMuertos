@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_EndS6M",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_EndS6M",
+    "path": "sprites/spr_EndS6M/spr_EndS6M.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

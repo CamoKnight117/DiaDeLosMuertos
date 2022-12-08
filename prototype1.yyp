@@ -109,6 +109,7 @@
     {"id":{"name":"obj_pickupParent","path":"objects/obj_pickupParent/obj_pickupParent.yy",},"order":2,},
     {"id":{"name":"room2","path":"rooms/room2/room2.yy",},"order":8,},
     {"id":{"name":"spr_SlideEndBG4","path":"sprites/spr_SlideEndBG4/spr_SlideEndBG4.yy",},"order":11,},
+    {"id":{"name":"Sprite102","path":"sprites/Sprite102/Sprite102.yy",},"order":21,},
     {"id":{"name":"obj_tequilaBreaking","path":"objects/obj_tequilaBreaking/obj_tequilaBreaking.yy",},"order":31,},
     {"id":{"name":"obj_EndS3A","path":"objects/obj_EndS3A/obj_EndS3A.yy",},"order":17,},
     {"id":{"name":"spr_motherMessage3","path":"sprites/spr_motherMessage3/spr_motherMessage3.yy",},"order":5,},

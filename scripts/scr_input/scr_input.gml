@@ -12,9 +12,9 @@ function scr_input() {
 	space = keyboard_check(vk_space) or gamepad_button_check_pressed(0, gp_face1);
 
 	basicAttack = keyboard_check_pressed(ord("J")) or gamepad_button_check_pressed(0, gp_face3);
-	throwAttack = keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(0, gp_shoulderrb);
-	chargeAttack = keyboard_check_pressed(ord("L")) //or gamepad_button_check_pressed(0, gp_shoulderrb);
-	strum = keyboard_check_released(ord("L"));
+	throwAttack = keyboard_check_pressed(ord("K")) or gamepad_button_check_pressed(0, gp_shoulderlb);
+	chargeAttack = keyboard_check_pressed(ord("L")) or gamepad_button_check_pressed(0, gp_shoulderrb);
+	strum = keyboard_check_released(ord("L")) or gamepad_button_check_released(0, gp_shoulderrb);
 
 	//Utility
 	if keyboard_check_pressed(vk_escape) game_end();

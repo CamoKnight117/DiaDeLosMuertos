@@ -43,6 +43,7 @@
     {"id":{"name":"snd_explosion","path":"sounds/snd_explosion/snd_explosion.yy",},"order":15,},
     {"id":{"name":"spr_artifactFlower","path":"sprites/spr_artifactFlower/spr_artifactFlower.yy",},"order":25,},
     {"id":{"name":"spr_healthBarSprite","path":"sprites/spr_healthBarSprite/spr_healthBarSprite.yy",},"order":20,},
+    {"id":{"name":"snd_bottleBreak","path":"sounds/snd_bottleBreak/snd_bottleBreak.yy",},"order":19,},
     {"id":{"name":"spr_S7A","path":"sprites/spr_S7A/spr_S7A.yy",},"order":13,},
     {"id":{"name":"spr_playerWalkingSpritesheet","path":"sprites/spr_playerWalkingSpritesheet/spr_playerWalkingSpritesheet.yy",},"order":6,},
     {"id":{"name":"spr_HelpSprite4","path":"sprites/spr_HelpSprite4/spr_HelpSprite4.yy",},"order":3,},

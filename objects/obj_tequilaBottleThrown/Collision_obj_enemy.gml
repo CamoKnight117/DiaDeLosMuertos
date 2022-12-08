@@ -18,7 +18,7 @@ if(((depth - other.depth) < depthDifToDamage)
 	}
 	
 	audio_play_sound(snd_zombie,4,false);
-	audio_play_sound(snd_potbreak, 5, false);
+	audio_play_sound(snd_bottleBreak, 5, false);
 	instance_destroy();
 }
 

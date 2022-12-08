@@ -22,7 +22,7 @@ height -= yVel;
 
 if(height <= 0)
 {
-	audio_play_sound(snd_potbreak, 5, false);
+	audio_play_sound(snd_bottleBreak, 5, false);
 	instance_destroy();
 }
 

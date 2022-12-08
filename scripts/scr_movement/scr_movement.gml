@@ -147,6 +147,7 @@ function walkMovement(){
 					sprinting = true;
 				}
 			}
+			
 			else
 			{
 				idle = true;

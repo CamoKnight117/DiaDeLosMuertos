@@ -14,7 +14,7 @@ if(((depth - other.depth) < depthDifToDamage)
 	{
 		other.hitOrigin = 1;
 	}
-	audio_play_sound(sound, 5, false);
+	audio_play_sound(snd_bottleBreak, 5, false);
 	instance_destroy();
 	
 }

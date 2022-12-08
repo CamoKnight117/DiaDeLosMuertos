@@ -13,7 +13,7 @@ gamepad_set_axis_deadzone(0, 0.7);
 
 attackAnimationArray = [7, 7, 7, 7, 5, 3, 3];
 basicAttackDamageStart = 4;
-chargeAnimationArray = [20,20,20,20];
+chargeAnimationArray = [16,16,16,16];
 strumAnimationArray = [7,7,7,7,7,7,7,7,7,7];
 strumAttackDamageStart = 1;
 strumAttackSecondDamage = 4;

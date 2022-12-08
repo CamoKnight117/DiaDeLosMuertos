@@ -18,7 +18,6 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_784396","properties":[],"isDnd":false,"objectId":{"name":"obj_ReturnTab","path":"objects/obj_ReturnTab/obj_ReturnTab.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.8,"scaleY":0.8,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":102.0,"y":-137.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_76919953","properties":[],"isDnd":false,"objectId":null,"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2256746D","properties":[],"isDnd":false,"objectId":{"name":"Obj_ControlsTrackMusic","path":"objects/Obj_ControlsTrackMusic/Obj_ControlsTrackMusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":352.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":{"name":"spr_controlsBG","path":"sprites/spr_controlsBG/spr_controlsBG.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -28,7 +27,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_784396","path":"rooms/rm_controls/rm_controls.yy",},
-    {"name":"inst_76919953","path":"rooms/rm_controls/rm_controls.yy",},
     {"name":"inst_2256746D","path":"rooms/rm_controls/rm_controls.yy",},
   ],
   "inheritCreationOrder": false,

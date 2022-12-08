@@ -1,2 +1,1 @@
 audio_stop_sound(snd_slidesTrack);
-audio_start_recording(snd_controlsTrack);

@@ -27,7 +27,6 @@ if(partSystemActive)
 	yHighBound = 0;
 	randX = random_range(xLowBound, xHighBound);
 	randY = random_range(yLowBound, yHighBound);
-	audio_play_sound(snd_bottleBreak, 5, false);
 	part_particles_create(particles, randX, randY, partTypeConfetti, 3);
 }
 

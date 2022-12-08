@@ -16,7 +16,8 @@ if(((depth - other.depth) < depthDifToDamage)
 		other.hitOrigin = 1;
 	}
 	
-}
+} 
 
 
 
+        

@@ -28,6 +28,7 @@
   "instanceCreationOrder": [
     {"name":"inst_784396","path":"rooms/rm_controls/rm_controls.yy",},
     {"name":"inst_2256746D","path":"rooms/rm_controls/rm_controls.yy",},
+    {"name":"inst_2256746D","path":"rooms/rm_controls/rm_controls.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

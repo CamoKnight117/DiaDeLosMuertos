@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "NewMessages",
-    "path": "folders/Sprites/HelpSprites/NewMessages.yy",
+    "name": "newHelps",
+    "path": "folders/Sprites/HelpSprites/newHelps.yy",
   },
 }
